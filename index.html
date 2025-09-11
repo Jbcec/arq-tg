@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN SITU/ Social</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Helvetica:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de bienvenida animada -->
+    <div id="welcome-screen">
+        <div class="welcome-center">
+            <div class="welcome-content" id="welcome-content">
+                <span class="logo" id="logo-anim">IN SITU/</span>
+                <span class="slogan" id="slogan-anim">TU PROYECTO,<br>NUESTRO COMPROMISO.</span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">IN SITU/</div>
+        <nav>
+            <button id="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul id="nav-list">
+                <li><a href="#" data-section="residential">RESIDENTIAL</a></li>
+                <li><a href="#" data-section="social" class="active">SOCIAL</a></li>
+                <li><a href="#" data-section="flipping">FLIPPING HOUSES</a></li>
+                <li><a href="#" data-section="studio">STUDIO</a></li>
+                <li><a href="#" data-section="contact">CONTACT</a></li>
+                <li class="menu-actions">
+                    <span class="lang">EN</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección RESIDENTIAL -->
+        <section id="section-residential" class="main-section" style="display:none;">
+            <div class="slider-layout" data-section="residential">
+                <button class="slider-nav left">&#8592;</button>
+                <div class="slider-info">
+                    <div class="slider-indicator" id="indicator-residential"></div>
+                    <h2 class="slider-title">RESIDENTIAL</h2>
+                    <p class="slider-text">
+                        Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un servicio: cuentan una historia y despiertan sensaciones.<br>
+                        Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran volver.
+                    </p>
+                </div>
+                <div class="slider-image-container">
+                    <img src="images/img1.jpg" alt="Imagen Residential" class="slider-image" id="img-residential" />
+                </div>
+                <button class="slider-nav right">&#8594;</button>
+            </div>
+        </section>
+        <!-- Sección SOCIAL (actualizada, solo slider y texto) -->
+        <section id="section-social" class="main-section">
+            <div class="slider-layout" data-section="social">
+                <button class="slider-nav left">&#8592;</button>
+                <div class="slider-info">
+                    <div class="slider-indicator" id="indicator-social"></div>
+                    <h2 class="slider-title">SOCIAL</h2>
+                    <p class="slider-text">
+                        Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un servicio: cuentan una historia y despiertan sensaciones.<br>
+                        Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran volver.
+                    </p>
+                </div>
+                <div class="slider-image-container">
+                    <img src="images/img2.jpg" alt="Imagen Social" class="slider-image" id="img-social" />
+                </div>
+                <button class="slider-nav right">&#8594;</button>
+            </div>
+        </section>
+        <!-- Sección FLIPPING HOUSES -->
+        <section id="section-flipping" class="main-section" style="display:none;">
+            <div class="slider-layout" data-section="flipping">
+                <button class="slider-nav left">&#8592;</button>
+                <div class="slider-info">
+                    <div class="slider-indicator" id="indicator-flipping"></div>
+                    <h2 class="slider-title">FLIPPING HOUSES</h2>
+                    <p class="slider-text">
+                        Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un servicio: cuentan una historia y despiertan sensaciones.<br>
+                        Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran volver.
+                    </p>
+                </div>
+                <div class="slider-image-container">
+                    <img src="images/img3.jpg" alt="Imagen Flipping Houses" class="slider-image" id="img-flipping" />
+                </div>
+                <button class="slider-nav right">&#8594;</button>
+            </div>
+        </section>
+        <!-- Sección STUDIO -->
+        <section id="section-studio" class="main-section" style="display:none;">
+            <div class="slider-layout" data-section="studio">
+                <button class="slider-nav left">&#8592;</button>
+                <div class="slider-info">
+                    <div class="slider-indicator" id="indicator-studio"></div>
+                    <h2 class="slider-title">STUDIO</h2>
+                    <p class="slider-text">
+                        Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un servicio: cuentan una historia y despiertan sensaciones.<br>
+                        Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran volver.
+                    </p>
+                </div>
+                <div class="slider-image-container">
+                    <img src="images/img1.jpg" alt="Imagen Studio" class="slider-image" id="img-studio" />
+                </div>
+                <button class="slider-nav right">&#8594;</button>
+            </div>
+        </section>
+        <!-- Sección CONTACT -->
+        <section id="section-contact" class="main-section" style="display:none;">
+            <div class="slider-layout" data-section="contact">
+                <button class="slider-nav left">&#8592;</button>
+                <div class="slider-info">
+                    <div class="slider-indicator" id="indicator-contact"></div>
+                    <h2 class="slider-title">CONTACT</h2>
+                    <p class="slider-text">
+                        Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un servicio: cuentan una historia y despiertan sensaciones.<br>
+                        Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran volver.
+                    </p>
+                </div>
+                <div class="slider-image-container">
+                    <img src="images/img2.jpg" alt="Imagen Contact" class="slider-image" id="img-contact" />
+                </div>
+                <button class="slider-nav right">&#8594;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="#">WhatsApp</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Behance</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
