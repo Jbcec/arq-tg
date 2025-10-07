@@ -161,6 +161,9 @@ const projectsData = {
 let currentProjectSection = null;
 let currentProjectIndex = 0;
 let currentImageIndex = 0;
+let modalInactivityTimer = null;
+let lastScrollY = window.scrollY;
+
 const heroIndices = {
     social: 0,
     studio: 0,
@@ -178,15 +181,19 @@ window.addEventListener('DOMContentLoaded', () => {
         logoAnim.classList.add('shifted');
         setTimeout(() => {
             sloganAnim.classList.add('visible');
-        }, 600);
+        }, 100);
     }, 1000);
 
     setTimeout(() => {
         welcome.style.opacity = 0;
         setTimeout(() => {
             welcome.style.display = 'none';
-        }, 1000);
+        }, 100);
     }, 3200);
+    
+    // Render projects after DOM is loaded
+    renderProjects('social');
+    renderProjects('residential');
 });
 
 // ==================== MOBILE NAVIGATION ====================
@@ -225,6 +232,23 @@ navLinks.forEach(link => {
     });
 });
 
+// ==================== HEADER SCROLL BEHAVIOR ====================
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        header.classList.add('hidden');
+    } else {
+        // Scrolling up
+        header.classList.remove('hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+});
+
 // ==================== HERO SLIDERS ====================
 function updateHeroSlider(section) {
     const images = heroSliders[section];
@@ -261,40 +285,10 @@ Object.keys(heroSliders).forEach(section => {
     updateHeroSlider(section);
 });
 
-// ==================== RENDER PROJECTS GRID ====================
-function renderProjects(section) {
-    const container = document.getElementById(`${section}-projects`);
-    if (!container || !projectsData[section]) {
-        console.log(`Container not found for ${section} or no data available`);
-        return;
-    }
-    
-    container.innerHTML = '';
-    
-    projectsData[section].forEach((project, index) => {
-        const card = document.createElement('div');
-        card.className = 'project-card';
-        card.innerHTML = `
-            <img src="${project.images[0]}" alt="${project.name}" class="project-image">
-            <div class="project-info">
-                <div class="project-name">${project.name}</div>
-                <div class="project-location">${project.location}</div>
-            </div>
-        `;
-        card.addEventListener('click', () => openProjectModal(section, index));
-        container.appendChild(card);
-    });
-}
-
-// Wait for DOM to be fully loaded before rendering projects
-window.addEventListener('DOMContentLoaded', () => {
-    renderProjects('social');
-    renderProjects('residential');
-});
-
 // ==================== PROJECT MODAL ====================
 const modal = document.getElementById('project-modal');
 const modalClose = document.getElementById('modal-close');
+const modalInfo = document.getElementById('modal-info');
 const modalTitle = document.getElementById('modal-title');
 const modalText = document.getElementById('modal-text');
 const modalImage = document.getElementById('modal-image');
@@ -303,19 +297,38 @@ const modalPrev = document.getElementById('modal-prev');
 const modalNext = document.getElementById('modal-next');
 const nextProjectIndicator = document.getElementById('next-project-indicator');
 
+console.log('Modal elements:', {
+    modal,
+    modalClose,
+    modalInfo,
+    modalTitle,
+    modalText,
+    modalImage,
+    modalCounter,
+    modalPrev,
+    modalNext,
+    nextProjectIndicator
+});
+
 function openProjectModal(section, projectIndex) {
+    console.log('openProjectModal called with:', section, projectIndex);
     currentProjectSection = section;
     currentProjectIndex = projectIndex;
     currentImageIndex = 0;
     
+    console.log('About to call updateModalContent');
     updateModalContent();
+    console.log('About to add active class to modal');
     modal.classList.add('active');
+    console.log('Modal classList:', modal.classList);
     document.body.style.overflow = 'hidden';
+    resetModalInactivity();
 }
 
 function closeProjectModal() {
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    clearTimeout(modalInactivityTimer);
 }
 
 function updateModalContent() {
@@ -323,6 +336,7 @@ function updateModalContent() {
     const totalImages = project.images.length;
     const isLastImage = currentImageIndex === totalImages - 1;
     const hasNextProject = currentProjectIndex < projectsData[currentProjectSection].length - 1;
+    const isFirstImage = currentImageIndex === 0;
     
     modalTitle.textContent = project.name;
     modalText.textContent = project.description;
@@ -330,12 +344,23 @@ function updateModalContent() {
     modalImage.alt = `${project.name} - Imagen ${currentImageIndex + 1}`;
     modalCounter.textContent = `${String(currentImageIndex + 1).padStart(2, '0')} — ${String(totalImages).padStart(2, '0')}`;
     
-    // Show "next project" indicator on last image if there's a next project
-    if (isLastImage && hasNextProject) {
-        nextProjectIndicator.classList.add('show');
+    // Hide description after first image
+    if (isFirstImage) {
+        modalInfo.classList.remove('hide-description');
     } else {
-        nextProjectIndicator.classList.remove('show');
+        modalInfo.classList.add('hide-description');
     }
+    
+    // Show next project indicator on last image
+    if (isLastImage && hasNextProject) {
+        nextProjectIndicator.dataset.canShow = 'true';
+    } else {
+        nextProjectIndicator.dataset.canShow = 'false';
+        nextProjectIndicator.classList.remove('visible');
+    }
+    
+    // Reset inactivity timer
+    resetModalInactivity();
 }
 
 function navigateModalImage(direction) {
@@ -373,10 +398,45 @@ modalClose.addEventListener('click', closeProjectModal);
 modalPrev.addEventListener('click', () => navigateModalImage('prev'));
 modalNext.addEventListener('click', () => navigateModalImage('next'));
 
+// Show next project indicator on hover
+modalNext.addEventListener('mouseenter', () => {
+    if (nextProjectIndicator.dataset.canShow === 'true') {
+        nextProjectIndicator.classList.add('visible');
+    }
+});
+
+modalNext.addEventListener('mouseleave', () => {
+    nextProjectIndicator.classList.remove('visible');
+});
+
 // Close modal on outside click
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeProjectModal();
+    }
+});
+
+// ==================== MODAL UI AUTO-HIDE ====================
+const modalUIElements = [modalPrev, modalNext, modalCounter];
+
+function hideModalUI() {
+    modalUIElements.forEach(el => el.classList.add('hide-ui'));
+}
+
+function showModalUI() {
+    modalUIElements.forEach(el => el.classList.remove('hide-ui'));
+}
+
+function resetModalInactivity() {
+    showModalUI();
+    clearTimeout(modalInactivityTimer);
+    modalInactivityTimer = setTimeout(hideModalUI, 3000);
+}
+
+// Track mouse movement in modal
+modal.addEventListener('mousemove', () => {
+    if (modal.classList.contains('active')) {
+        resetModalInactivity();
     }
 });
 
@@ -390,5 +450,37 @@ document.addEventListener('keydown', (e) => {
         } else if (e.key === 'ArrowRight') {
             navigateModalImage('next');
         }
+        resetModalInactivity();
     }
 });
+
+// ==================== RENDER PROJECTS GRID ====================
+function renderProjects(section) {
+    const container = document.getElementById(`${section}-projects`);
+    if (!container || !projectsData[section]) {
+        console.error(`Container not found for ${section} or no data available`);
+        return;
+    }
+    
+    console.log(`Rendering ${projectsData[section].length} projects for ${section}`);
+    container.innerHTML = '';
+    
+    projectsData[section].forEach((project, index) => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.innerHTML = `
+            <img src="${project.images[0]}" alt="${project.name}" class="project-image">
+            <div class="project-info">
+                <div class="project-name">${project.name}</div>
+                <div class="project-location">${project.location}</div>
+            </div>
+        `;
+        card.addEventListener('click', () => {
+            console.log(`Clicked on ${project.name} - opening modal`);
+            openProjectModal(section, index);
+        });
+        container.appendChild(card);
+    });
+    
+    console.log(`Finished rendering ${section} projects`);
+}

@@ -76,9 +76,16 @@ header {
     justify-content: space-between;
     padding: 0 2vw;
     height: 70px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
 }
 
 .logo {
@@ -131,6 +138,7 @@ nav a:hover {
 .main-section {
     display: none;
     flex: 1;
+    margin-top: 70px;
 }
 
 .main-section.active {
@@ -272,7 +280,7 @@ nav a:hover {
 
 .project-image {
     width: 100%;
-    height: 250px;
+    height: 350px;
     background: #bbb;
     object-fit: cover;
     display: block;
@@ -303,19 +311,43 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     z-index: 1000;
     align-items: center;
     justify-content: center;
+    padding: 4vh 2vw;
 }
 
 .project-modal.active {
     display: flex;
 }
 
+.modal-close {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    font-size: 3rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    opacity: 0.7;
+}
+
 .modal-content {
     background: #222;
-    width: 90vw;
+    width: 100%;
     max-width: 1200px;
     height: 80vh;
     border-radius: 8px;
@@ -324,34 +356,17 @@ nav a:hover {
     overflow: hidden;
 }
 
-.modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.2s;
-}
-
-.modal-close:hover {
-    opacity: 0.7;
-}
-
 .modal-info {
     flex: 1;
     padding: 6vh 4vw;
     color: #fff;
     overflow-y: auto;
     max-width: 400px;
+    transition: opacity 0.3s ease;
+}
+
+.modal-info.hide-description {
+    display: none;
 }
 
 .modal-title {
@@ -389,17 +404,23 @@ nav a:hover {
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.3);
+    background: none;
     border: none;
     cursor: pointer;
-    padding: 2vh 1.5vw;
-    transition: background 0.2s;
+    padding: 2vh 2vw;
+    transition: color 0.3s ease, opacity 0.3s ease;
     user-select: none;
+    z-index: 5;
 }
 
 .modal-nav:hover {
-    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 1);
+}
+
+.modal-nav.hide-ui {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal-nav.left {
@@ -416,25 +437,34 @@ nav a:hover {
     right: 30px;
     color: #fff;
     font-size: 1rem;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+.modal-counter.hide-ui {
+    opacity: 0;
 }
 
 .next-project-indicator {
-    display: none;
     position: absolute;
-    right: 80px;
+    right: 100px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     color: #222;
     padding: 1.5vh 2vw;
     border-radius: 8px;
     font-weight: 700;
-    pointer-events: none;
     font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 4;
 }
 
-.next-project-indicator.show {
-    display: block;
+.next-project-indicator.visible {
+    opacity: 1;
 }
 
 /* ==================== FOOTER ==================== */
@@ -547,6 +577,14 @@ footer {
     }
 
     .hero-text {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-text {
         font-size: 1rem;
     }
 

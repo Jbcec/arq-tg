@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IN SITU - Estudio de arquitectura especializado en proyectos residenciales, sociales y flipping houses">
+    <meta name="description"
+        content="IN SITU - Estudio de arquitectura especializado en proyectos residenciales, sociales y flipping houses">
     <title>IN SITU/ - Estudio de Arquitectura</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Welcome Screen -->
     <div id="welcome-screen">
@@ -27,7 +30,6 @@
                 <li><a href="#" data-section="social">SOCIAL</a></li>
                 <li><a href="#" data-section="residential">RESIDENTIAL</a></li>
                 <li><a href="#" data-section="flipping">FLIPPING HOUSES</a></li>
-                <li><a href="#" data-section="contact">CONTACT</a></li>
                 <li class="menu-actions">
                     <span class="lang">EN</span>
                 </li>
@@ -41,7 +43,9 @@
             <div class="section-header">
                 <h1 class="section-title">STUDIO</h1>
                 <p class="section-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>
             <div class="map-container">
@@ -54,8 +58,12 @@
             <div class="section-header">
                 <h1 class="section-title">SOCIAL</h1>
                 <p class="section-text">
-                    Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un servicio: cuentan una historia y despiertan sensaciones.<br><br>
-                    Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran volver.
+                    Somos fanáticos de crear lugares de encuentro, esos espacios donde la gente sale del hogar para
+                    vivir una experiencia distinta. Creemos que un bar, un restaurante o un local no solo ofrecen un
+                    servicio: cuentan una historia y despiertan sensaciones.<br><br>
+                    Queremos acompañarte en ese proceso de darle identidad a tu proyecto, desde la primera idea hasta la
+                    materialización del espacio, cuidando cada detalle para que quienes lo visiten siempre quieran
+                    volver.
                 </p>
             </div>
             <div class="projects-section">
@@ -68,7 +76,9 @@
             <div class="section-header">
                 <h1 class="section-title">RESIDENTIAL</h1>
                 <p class="section-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>
             <div class="projects-section">
@@ -84,11 +94,13 @@
                     <div class="hero-indicator" id="indicator-flipping">01 — 03</div>
                     <h1 class="hero-title">FLIPPING<br>HOUSES</h1>
                     <p class="hero-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
                     </p>
                 </div>
                 <div class="hero-image-container">
-                    <img src="https://via.placeholder.com/500x400/888/fff?text=Flipping+1" alt="Proyecto Flipping Houses" class="hero-image" id="img-flipping">
+                    <img src="https://via.placeholder.com/500x400/888/fff?text=Flipping+1"
+                        alt="Proyecto Flipping Houses" class="hero-image" id="img-flipping">
                 </div>
                 <button class="slider-nav right" data-hero="flipping" aria-label="Siguiente imagen">→</button>
             </div>
@@ -100,7 +112,8 @@
                 <div class="hero-info">
                     <h1 class="hero-title">CONTACT</h1>
                     <p class="hero-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
@@ -109,18 +122,18 @@
 
     <!-- Project Modal -->
     <div class="project-modal" id="project-modal">
+        <button class="modal-close" id="modal-close" aria-label="Cerrar modal">×</button>
         <div class="modal-content">
-            <button class="modal-close" id="modal-close" aria-label="Cerrar modal">×</button>
-            <div class="modal-info">
-                <h2 class="modal-title" id="modal-title"></h2>
-                <p class="modal-text" id="modal-text"></p>
+            <div id="modal-info" class="modal-info">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <p id="modal-text" class="modal-text"></p>
             </div>
             <div class="modal-images">
-                <button class="modal-nav left" id="modal-prev" aria-label="Imagen anterior">←</button>
-                <img src="" alt="" class="modal-image" id="modal-image">
-                <button class="modal-nav right" id="modal-next" aria-label="Siguiente imagen">→</button>
-                <div class="modal-counter" id="modal-counter"></div>
-                <div class="next-project-indicator" id="next-project-indicator">
+                <button id="modal-prev" class="modal-nav left" aria-label="Imagen anterior">←</button>
+                <img id="modal-image" src="" alt="" class="modal-image">
+                <button id="modal-next" class="modal-nav right" aria-label="Siguiente imagen">→</button>
+                <div id="modal-counter" class="modal-counter"></div>
+                <div id="next-project-indicator" class="next-project-indicator">
                     SIGUIENTE PROYECTO →
                 </div>
             </div>
@@ -139,4 +152,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
