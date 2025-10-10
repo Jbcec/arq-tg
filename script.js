@@ -1,4 +1,3 @@
-// ==================== DATA ====================
 const heroSliders = {
     social: [
         'https://via.placeholder.com/500x400/888/fff?text=Social+1',
@@ -25,6 +24,27 @@ const heroSliders = {
 const projectsData = {
     social: [
         {
+            name: 'JUANA LA LOCA',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+1',
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+2',
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+3',
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+4'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            name: 'JUANA LA LOCA 2',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-1',
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-2',
+                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-3'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
+        },
+        {
             name: 'LA VICCA',
             location: 'Majadahonda',
             images: [
@@ -33,126 +53,136 @@ const projectsData = {
                 'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+3',
                 'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
-            name: 'ANCHO',
+            name: 'PARADA CERO',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+1',
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+2',
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+3',
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+4',
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+5'
-            ],
-            description: 'Ubicado en una esquina icónica de Chamartín, Ancho fusiona la estética personalista de la Movida con el encanto entre amigos. Un espacio que vuelve a los orígenes y a los encuentros entre amigos. El diseño evoca la magia de una noche en la que todo puede pasar. Un bar abierto donde los ingredientes y la técnica culinaria son protagonistas.'
-        },
-        {
-            name: 'FENZZE',
-            location: 'Madrid',
-            images: [
-                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+1',
-                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+2',
-                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+3'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
-        },
-        {
-            name: 'JUANA LA LOCA',
-            location: 'Madrid',
-            images: [
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+1',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+3',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+4'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-        },
-        {
-            name: 'PROYECTO 5',
-            location: 'Barcelona',
-            images: [
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+5-1',
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+5-2',
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+5-3'
+                'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+1',
+                'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+2',
+                'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+3'
             ],
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         },
         {
-            name: 'PROYECTO 6',
-            location: 'Valencia',
+            name: 'PIZZA TRAIN',
+            location: 'Barcelona',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+6-1',
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+6-2',
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+6-3',
-                'https://via.placeholder.com/800x600/777/fff?text=Proyecto+6-4'
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+1',
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+2',
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+3',
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+4'
             ],
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
         }
     ],
     residential: [
         {
-            name: 'CASA MODERNA',
-            location: 'Pozuelo',
-            images: [
-                'https://via.placeholder.com/800x600/666/fff?text=Casa+1',
-                'https://via.placeholder.com/800x600/666/fff?text=Casa+2',
-                'https://via.placeholder.com/800x600/666/fff?text=Casa+3'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
-        },
-        {
-            name: 'APARTAMENTO CENTRO',
+            name: 'ALVEAR',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=Apto+1',
-                'https://via.placeholder.com/800x600/666/fff?text=Apto+2',
-                'https://via.placeholder.com/800x600/666/fff?text=Apto+3',
-                'https://via.placeholder.com/800x600/666/fff?text=Apto+4'
+                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+1',
+                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+2',
+                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+3'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            name: 'ARTURO SORIA',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+1',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+2',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+3',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+4'
             ],
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
         },
         {
-            name: 'VILLA MEDITERRÁNEA',
-            location: 'Marbella',
+            name: 'C13',
+            location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=Villa+1',
-                'https://via.placeholder.com/800x600/666/fff?text=Villa+2',
-                'https://via.placeholder.com/800x600/666/fff?text=Villa+3'
+                'https://via.placeholder.com/800x600/666/fff?text=C13+1',
+                'https://via.placeholder.com/800x600/666/fff?text=C13+2',
+                'https://via.placeholder.com/800x600/666/fff?text=C13+3'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         },
         {
-            name: 'LOFT INDUSTRIAL',
+            name: 'LT',
             location: 'Barcelona',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=Loft+1',
-                'https://via.placeholder.com/800x600/666/fff?text=Loft+2',
-                'https://via.placeholder.com/800x600/666/fff?text=Loft+3',
-                'https://via.placeholder.com/800x600/666/fff?text=Loft+4'
+                'https://via.placeholder.com/800x600/666/fff?text=LT+1',
+                'https://via.placeholder.com/800x600/666/fff?text=LT+2',
+                'https://via.placeholder.com/800x600/666/fff?text=LT+3'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.'
+        },
+        {
+            name: 'RB26',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=RB26+1',
+                'https://via.placeholder.com/800x600/666/fff?text=RB26+2',
+                'https://via.placeholder.com/800x600/666/fff?text=RB26+3',
+                'https://via.placeholder.com/800x600/666/fff?text=RB26+4'
             ],
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
         },
         {
-            name: 'CASA MINIMALISTA',
-            location: 'Sevilla',
+            name: 'RGS',
+            location: 'Valencia',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=Minimalista+1',
-                'https://via.placeholder.com/800x600/666/fff?text=Minimalista+2',
-                'https://via.placeholder.com/800x600/666/fff?text=Minimalista+3'
+                'https://via.placeholder.com/800x600/666/fff?text=RGS+1',
+                'https://via.placeholder.com/800x600/666/fff?text=RGS+2',
+                'https://via.placeholder.com/800x600/666/fff?text=RGS+3'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit.'
         },
         {
-            name: 'PENTHOUSE',
+            name: 'SANCHINARRO',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=Penthouse+1',
-                'https://via.placeholder.com/800x600/666/fff?text=Penthouse+2',
-                'https://via.placeholder.com/800x600/666/fff?text=Penthouse+3',
-                'https://via.placeholder.com/800x600/666/fff?text=Penthouse+4'
+                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+1',
+                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+2',
+                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+3',
+                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+        }
+    ],
+    flipping: [
+        {
+            name: 'PROYECTO FLIPPING 1',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+1-1',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+1-2',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+1-3'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            name: 'PROYECTO FLIPPING 2',
+            location: 'Barcelona',
+            images: [
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-1',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-2',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-3',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-4'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
+        },
+        {
+            name: 'PROYECTO FLIPPING 3',
+            location: 'Valencia',
+            images: [
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+3-1',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+3-2',
+                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+3-3'
+            ],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
         }
     ]
 };
@@ -181,19 +211,20 @@ window.addEventListener('DOMContentLoaded', () => {
         logoAnim.classList.add('shifted');
         setTimeout(() => {
             sloganAnim.classList.add('visible');
-        }, 100);
+        }, 600);
     }, 1000);
 
     setTimeout(() => {
         welcome.style.opacity = 0;
         setTimeout(() => {
             welcome.style.display = 'none';
-        }, 100);
+        }, 1000);
     }, 3200);
     
     // Render projects after DOM is loaded
     renderProjects('social');
     renderProjects('residential');
+    renderProjects('flipping');
 });
 
 // ==================== MOBILE NAVIGATION ====================
@@ -239,10 +270,8 @@ window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
     
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down
         header.classList.add('hidden');
     } else {
-        // Scrolling up
         header.classList.remove('hidden');
     }
     
@@ -297,30 +326,13 @@ const modalPrev = document.getElementById('modal-prev');
 const modalNext = document.getElementById('modal-next');
 const nextProjectIndicator = document.getElementById('next-project-indicator');
 
-console.log('Modal elements:', {
-    modal,
-    modalClose,
-    modalInfo,
-    modalTitle,
-    modalText,
-    modalImage,
-    modalCounter,
-    modalPrev,
-    modalNext,
-    nextProjectIndicator
-});
-
 function openProjectModal(section, projectIndex) {
-    console.log('openProjectModal called with:', section, projectIndex);
     currentProjectSection = section;
     currentProjectIndex = projectIndex;
     currentImageIndex = 0;
     
-    console.log('About to call updateModalContent');
     updateModalContent();
-    console.log('About to add active class to modal');
     modal.classList.add('active');
-    console.log('Modal classList:', modal.classList);
     document.body.style.overflow = 'hidden';
     resetModalInactivity();
 }
@@ -351,7 +363,8 @@ function updateModalContent() {
         modalInfo.classList.add('hide-description');
     }
     
-    // Show next project indicator on last image
+    // Show next project indicator ONLY on last image of last project
+    // Store state in data attribute so we know when to show it
     if (isLastImage && hasNextProject) {
         nextProjectIndicator.dataset.canShow = 'true';
     } else {
@@ -372,19 +385,15 @@ function navigateModalImage(direction) {
     
     if (direction === 'next') {
         if (isLastImage && hasNextProject) {
-            // Move to next project
             currentProjectIndex++;
             currentImageIndex = 0;
         } else if (!isLastImage) {
-            // Move to next image
             currentImageIndex++;
         }
     } else {
         if (currentImageIndex > 0) {
-            // Move to previous image
             currentImageIndex--;
         } else if (hasPrevProject) {
-            // Move to previous project's last image
             currentProjectIndex--;
             currentImageIndex = projectsData[currentProjectSection][currentProjectIndex].images.length - 1;
         }
@@ -393,10 +402,21 @@ function navigateModalImage(direction) {
     updateModalContent();
 }
 
-// Modal event listeners
-modalClose.addEventListener('click', closeProjectModal);
-modalPrev.addEventListener('click', () => navigateModalImage('prev'));
-modalNext.addEventListener('click', () => navigateModalImage('next'));
+// Modal event listeners - FIXED
+modalClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeProjectModal();
+});
+
+modalPrev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navigateModalImage('prev');
+});
+
+modalNext.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navigateModalImage('next');
+});
 
 // Show next project indicator on hover
 modalNext.addEventListener('mouseenter', () => {
@@ -413,6 +433,13 @@ modalNext.addEventListener('mouseleave', () => {
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeProjectModal();
+    }
+});
+
+// Track mouse movement in modal
+modal.addEventListener('mousemove', () => {
+    if (modal.classList.contains('active')) {
+        resetModalInactivity();
     }
 });
 
@@ -433,13 +460,6 @@ function resetModalInactivity() {
     modalInactivityTimer = setTimeout(hideModalUI, 3000);
 }
 
-// Track mouse movement in modal
-modal.addEventListener('mousemove', () => {
-    if (modal.classList.contains('active')) {
-        resetModalInactivity();
-    }
-});
-
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (modal.classList.contains('active')) {
@@ -454,15 +474,39 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// ==================== TOUCH SWIPE FOR MOBILE ====================
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleSwipe() {
+    if (touchEndX < touchStartX - 50) {
+        navigateModalImage('next');
+    }
+    if (touchEndX > touchStartX + 50) {
+        navigateModalImage('prev');
+    }
+}
+
+modal.addEventListener('touchstart', (e) => {
+    if (modal.classList.contains('active')) {
+        touchStartX = e.changedTouches[0].screenX;
+    }
+}, false);
+
+modal.addEventListener('touchend', (e) => {
+    if (modal.classList.contains('active')) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }
+}, false);
+
 // ==================== RENDER PROJECTS GRID ====================
 function renderProjects(section) {
     const container = document.getElementById(`${section}-projects`);
     if (!container || !projectsData[section]) {
-        console.error(`Container not found for ${section} or no data available`);
         return;
     }
     
-    console.log(`Rendering ${projectsData[section].length} projects for ${section}`);
     container.innerHTML = '';
     
     projectsData[section].forEach((project, index) => {
@@ -476,11 +520,8 @@ function renderProjects(section) {
             </div>
         `;
         card.addEventListener('click', () => {
-            console.log(`Clicked on ${project.name} - opening modal`);
             openProjectModal(section, index);
         });
         container.appendChild(card);
     });
-    
-    console.log(`Finished rendering ${section} projects`);
 }

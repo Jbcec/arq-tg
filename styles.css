@@ -93,6 +93,14 @@ header.hidden {
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 2px;
+    flex-shrink: 0;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
@@ -101,6 +109,8 @@ nav ul {
     gap: 2vw;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -150,13 +160,14 @@ nav a:hover {
     padding: 8vh 4vw 4vh 4vw;
     max-width: 1400px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .section-title {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 6rem;
     font-weight: 700;
-    margin: 0 0 2vh 0;
+    margin: 0 0 4vh 0;
     line-height: 0.9;
     color: #222;
 }
@@ -167,6 +178,7 @@ nav a:hover {
     line-height: 1.5;
     color: #222;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 /* ==================== HERO SLIDER ==================== */
@@ -259,7 +271,7 @@ nav a:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-top: 4vh;
 }
@@ -373,9 +385,12 @@ nav a:hover {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     line-height: 0.9;
     color: #fff;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .modal-text {
@@ -495,7 +510,7 @@ footer {
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 1100px) {
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -535,6 +550,10 @@ footer {
         display: block;
     }
 
+    nav {
+        flex: none;
+    }
+
     nav ul {
         flex-direction: column;
         position: absolute;
@@ -546,6 +565,8 @@ footer {
         display: none;
         border-radius: 8px;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        justify-content: flex-start;
+        gap: 0;
     }
 
     nav ul.show {
@@ -554,6 +575,8 @@ footer {
 
     nav ul li {
         padding: 0.5vh 1vw;
+        width: 100%;
+        text-align: center;
     }
 
     .menu-actions {
@@ -580,8 +603,14 @@ footer {
         font-size: 1rem;
     }
 
+    .section-header {
+        padding: 4vh 2vw 2vh 2vw;
+        text-align: center;
+    }
+
     .section-title {
         font-size: 2.5rem;
+        margin: 0 0 2vh 0;
     }
 
     .section-text {
@@ -590,42 +619,65 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 3vw;
     }
 
     .modal-content {
         flex-direction: column;
-        height: 90vh;
-        width: 95vw;
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+        max-width: none;
     }
 
     .modal-info {
         max-width: 100%;
         padding: 3vh 4vw;
         flex: none;
-        max-height: 40%;
+        max-height: 30%;
+        overflow: hidden;
     }
 
     .modal-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1vh;
     }
 
     .modal-text {
         font-size: 0.85rem;
+        max-height: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
 
     .modal-images {
         flex: 1;
+        width: 100%;
     }
 
     .modal-nav {
         font-size: 2rem;
         padding: 1vh 1vw;
+        display: none;
+    }
+
+    .modal-counter {
+        font-size: 0.85rem;
+        bottom: 20px;
+        right: 20px;
     }
 
     .next-project-indicator {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         padding: 1vh 1.5vw;
-        right: 60px;
+        right: 50%;
+        transform: translate(50%, -50%);
+        bottom: auto;
+        top: 50%;
+        white-space: normal;
+        text-align: center;
     }
 
     .welcome-content {
