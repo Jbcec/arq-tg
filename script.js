@@ -1,26 +1,3 @@
-const heroSliders = {
-    social: [
-        'https://via.placeholder.com/500x400/888/fff?text=Social+1',
-        'https://via.placeholder.com/500x400/888/fff?text=Social+2',
-        'https://via.placeholder.com/500x400/888/fff?text=Social+3'
-    ],
-    studio: [
-        'https://via.placeholder.com/500x400/888/fff?text=Studio+1',
-        'https://via.placeholder.com/500x400/888/fff?text=Studio+2',
-        'https://via.placeholder.com/500x400/888/fff?text=Studio+3'
-    ],
-    residential: [
-        'https://via.placeholder.com/500x400/888/fff?text=Residential+1',
-        'https://via.placeholder.com/500x400/888/fff?text=Residential+2',
-        'https://via.placeholder.com/500x400/888/fff?text=Residential+3'
-    ],
-    flipping: [
-        'https://via.placeholder.com/500x400/888/fff?text=Flipping+1',
-        'https://via.placeholder.com/500x400/888/fff?text=Flipping+2',
-        'https://via.placeholder.com/500x400/888/fff?text=Flipping+3'
-    ]
-};
-
 const projectsData = {
     social: [
         {
@@ -187,19 +164,11 @@ const projectsData = {
     ]
 };
 
-// ==================== STATE ====================
 let currentProjectSection = null;
 let currentProjectIndex = 0;
 let currentImageIndex = 0;
 let modalInactivityTimer = null;
 let lastScrollY = window.scrollY;
-
-const heroIndices = {
-    social: 0,
-    studio: 0,
-    residential: 0,
-    flipping: 0
-};
 
 // ==================== WELCOME ANIMATION ====================
 window.addEventListener('DOMContentLoaded', () => {
@@ -221,7 +190,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }, 3200);
     
-    // Render projects after DOM is loaded
     renderProjects('social');
     renderProjects('residential');
     renderProjects('flipping');
@@ -278,42 +246,6 @@ window.addEventListener('scroll', () => {
     lastScrollY = currentScrollY;
 });
 
-// ==================== HERO SLIDERS ====================
-function updateHeroSlider(section) {
-    const images = heroSliders[section];
-    if (!images) return;
-    
-    const img = document.getElementById(`img-${section}`);
-    const indicator = document.getElementById(`indicator-${section}`);
-    const index = heroIndices[section];
-    
-    if (img && indicator) {
-        img.src = images[index];
-        indicator.textContent = `${String(index + 1).padStart(2, '0')} — ${String(images.length).padStart(2, '0')}`;
-    }
-}
-
-document.querySelectorAll('.slider-nav[data-hero]').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const section = btn.dataset.hero;
-        const images = heroSliders[section];
-        if (!images) return;
-        
-        if (btn.classList.contains('left')) {
-            heroIndices[section] = (heroIndices[section] - 1 + images.length) % images.length;
-        } else {
-            heroIndices[section] = (heroIndices[section] + 1) % images.length;
-        }
-        
-        updateHeroSlider(section);
-    });
-});
-
-// Initialize hero sliders
-Object.keys(heroSliders).forEach(section => {
-    updateHeroSlider(section);
-});
-
 // ==================== PROJECT MODAL ====================
 const modal = document.getElementById('project-modal');
 const modalClose = document.getElementById('modal-close');
@@ -324,7 +256,8 @@ const modalImage = document.getElementById('modal-image');
 const modalCounter = document.getElementById('modal-counter');
 const modalPrev = document.getElementById('modal-prev');
 const modalNext = document.getElementById('modal-next');
-const nextProjectIndicator = document.getElementById('next-project-indicator');
+const nextProjectInfo = document.getElementById('next-project-info');
+const nextProjectData = document.getElementById('next-project-data');
 
 function openProjectModal(section, projectIndex) {
     currentProjectSection = section;
@@ -356,23 +289,54 @@ function updateModalContent() {
     modalImage.alt = `${project.name} - Imagen ${currentImageIndex + 1}`;
     modalCounter.textContent = `${String(currentImageIndex + 1).padStart(2, '0')} — ${String(totalImages).padStart(2, '0')}`;
     
-    // Hide description after first image
     if (isFirstImage) {
         modalInfo.classList.remove('hide-description');
     } else {
         modalInfo.classList.add('hide-description');
     }
     
-    // Show next project indicator ONLY on last image of last project
-    // Store state in data attribute so we know when to show it
     if (isLastImage && hasNextProject) {
-        nextProjectIndicator.dataset.canShow = 'true';
+        const nextProject = projectsData[currentProjectSection][currentProjectIndex + 1];
+        nextProjectData.innerHTML = `
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">${nextProject.name}</span>
+                <span class="next-project-data-value"></span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">Categoría</span>
+                <span class="next-project-data-value">Arquitectura Residencial</span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">Área</span>
+                <span class="next-project-data-value">450 m²</span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">Año</span>
+                <span class="next-project-data-value">2025</span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">Diseño</span>
+                <span class="next-project-data-value">Estudio Berd</span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">Contratista General</span>
+                <span class="next-project-data-value">Estudio IN SITU/</span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">Ciudad</span>
+                <span class="next-project-data-value">Madrid</span>
+            </div>
+            <div class="next-project-data-item">
+                <span class="next-project-data-label">País</span>
+                <span class="next-project-data-value">España</span>
+            </div>
+        `;
+        nextProjectInfo.dataset.canShow = 'true';
     } else {
-        nextProjectIndicator.dataset.canShow = 'false';
-        nextProjectIndicator.classList.remove('visible');
+        nextProjectInfo.dataset.canShow = 'false';
+        nextProjectInfo.classList.remove('visible');
     }
     
-    // Reset inactivity timer
     resetModalInactivity();
 }
 
@@ -402,7 +366,6 @@ function navigateModalImage(direction) {
     updateModalContent();
 }
 
-// Modal event listeners - FIXED
 modalClose.addEventListener('click', (e) => {
     e.stopPropagation();
     closeProjectModal();
@@ -418,25 +381,23 @@ modalNext.addEventListener('click', (e) => {
     navigateModalImage('next');
 });
 
-// Show next project indicator on hover
+// Show next project info on hover - FIX PRINCIPAL
 modalNext.addEventListener('mouseenter', () => {
-    if (nextProjectIndicator.dataset.canShow === 'true') {
-        nextProjectIndicator.classList.add('visible');
+    if (nextProjectInfo.dataset.canShow === 'true') {
+        nextProjectInfo.classList.add('visible');
     }
 });
 
 modalNext.addEventListener('mouseleave', () => {
-    nextProjectIndicator.classList.remove('visible');
+    nextProjectInfo.classList.remove('visible');
 });
 
-// Close modal on outside click
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeProjectModal();
     }
 });
 
-// Track mouse movement in modal
 modal.addEventListener('mousemove', () => {
     if (modal.classList.contains('active')) {
         resetModalInactivity();
