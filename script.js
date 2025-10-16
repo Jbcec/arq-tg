@@ -12,7 +12,7 @@ const projectsData = {
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         },
         {
-            name: 'JUANA LA LOCA 2',
+            name: 'JUANA LA LOCA II',
             location: 'Madrid',
             images: [
                 'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-1',

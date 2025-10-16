@@ -1,4 +1,4 @@
-/* ==================== FONTS ==================== */
+/* ==================== FONT FACE ==================== */
 @font-face {
     font-family: 'Bigger Display';
     src: url('fonts/BiggerDisplay.otf') format('opentype');
@@ -48,7 +48,7 @@ body {
 }
 
 #logo-anim {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Bigger Display', Arial, sans-serif;
     font-size: 6rem;
     font-weight: 700;
     color: #f3f1ed;
@@ -60,13 +60,13 @@ body {
 }
 
 #logo-anim.shifted {
-    transform: translateX(-10%);
+    transform: translateX(-60%);
     position: relative;
     left: auto;
 }
 
 #slogan-anim {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Bigger Display', Arial, sans-serif;
     font-size: 4rem;
     font-weight: 700;
     color: #f3f1ed;
@@ -108,7 +108,7 @@ header.hidden {
 }
 
 .logo {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -179,14 +179,14 @@ nav a:hover {
     padding: 8vh 4vw 4vh 4vw;
     max-width: 1400px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .section-title {
-    font-family: 'Oswald', Arial, sans-serif;
-    font-size: 6rem;
+    font-family: 'Bigger Display', Arial, sans-serif;
+    font-size: 13rem;
     font-weight: 700;
-    margin: 0 0 4vh 0;
+    margin: 0 0 2vh 0;
     line-height: 0.9;
     color: #222;
 }
@@ -197,7 +197,6 @@ nav a:hover {
     line-height: 1.5;
     color: #222;
     max-width: 800px;
-    margin: 0 auto;
     text-align: left;
 }
 
@@ -218,7 +217,7 @@ nav a:hover {
 }
 
 .hero-title {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 6rem;
     font-weight: 700;
     margin: 0 0 2vh 0;
@@ -253,15 +252,15 @@ nav a:hover {
     width: 100%;
     max-width: 1200px;
     height: 500px;
-    background: #d0d0d0;
     margin: 4vh auto;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: #666;
+    overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
 }
 
 /* ==================== PROJECTS GRID ==================== */
@@ -305,7 +304,7 @@ nav a:hover {
 }
 
 .project-name {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.5vh;
@@ -372,7 +371,7 @@ nav a:hover {
 
 .modal-info {
     flex: 1;
-    padding: 6vh 4vw;
+    padding: 6vh 3vw;
     color: #fff;
     overflow-y: auto;
     max-width: 400px;
@@ -384,8 +383,8 @@ nav a:hover {
 }
 
 .modal-title {
-    font-family: 'Oswald', Arial, sans-serif;
-    font-size: 3.5rem;
+    font-family: 'Bigger Display', Arial, sans-serif;
+    font-size: 7rem;
     font-weight: 700;
     margin-bottom: 4vh;
     line-height: 0.9;
@@ -488,7 +487,7 @@ nav a:hover {
 }
 
 .next-project-header {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -648,11 +647,11 @@ footer {
 
     .section-header {
         padding: 4vh 2vw 2vh 2vw;
-        text-align: center;
+        text-align: left;
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 5rem;
         margin: 0 0 2vh 0;
     }
 
@@ -682,7 +681,7 @@ footer {
     }
 
     .modal-title {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         margin-bottom: 1vh;
     }
 
