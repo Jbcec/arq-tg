@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="IN SITU - Estudio de arquitectura especializado en proyectos residenciales, sociales y flipping houses">
     <title>IN SITU/ - Estudio de Arquitectura</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,9 +37,9 @@
         <!-- STUDIO Section -->
         <section id="section-studio" class="main-section active">
             <div class="section-header">
-                <h1 class="section-title">Studio </h1>
+                <h1 class="section-title">STUDIO</h1>
                 <p class="section-text">
-                    IN SITU/ es el espacio de trabajo de Martín Esteban Cruz, junto a su equipo y colaboradores. Arquitecto con muchos años de experiencia en el rubro y una profunda pasión por el diseño.<br><br>
+                                       IN SITU/ es el espacio de trabajo de Martín Esteban Cruz, junto a su equipo y colaboradores. Arquitecto con muchos años de experiencia en el rubro y una profunda pasión por el diseño.<br><br>
                     Trabajamos desde adentro, escuchando la historia, las costumbres y la manera de habitar de quienes confían en nosotros. 
                     Nos gusta conocer cada detalle de nuestros clientes, porque son esas particularidades las que hacen que un proyecto sea único.<br><br>
                     Creemos en diseñar con cercanía y precisión, construyendo juntos espacios con identidad, donde cada persona sienta que ese lugar le pertenece, porque su origen está en el proyecto.<br><br>
@@ -48,14 +47,14 @@
                 </p>
             </div>
             <div class="map-container">
-                <p>Google Maps API - Mapa de ubicaciones de obras</p>
+                <div id="map"></div>
             </div>
         </section>
 
         <!-- SOCIAL Section -->
         <section id="section-social" class="main-section">
             <div class="section-header">
-                <h1 class="section-title">Social</h1>
+                <h1 class="section-title">SOCIAL</h1>
                 <p class="section-text">
                     Los espacios sociales son escenarios de experiencias compartidas, puntos de encuentro que marcan momentos y generan comunidad.<br><br>
                     En IN SITU/ proyectamos bares, restaurantes y locales que reflejan la personalidad de cada marca y que invitan a ser vividos.<br><br>
@@ -71,7 +70,7 @@
         <!-- RESIDENTIAL Section -->
         <section id="section-residential" class="main-section">
             <div class="section-header">
-                <h1 class="section-title">Home</h1>
+                <h1 class="section-title">HOME</h1>
                 <p class="section-text">
                     En IN SITU/ creemos que una casa no es solo un espacio físico, sino un reflejo de quienes la habitan.<br><br>
                     Cada proyecto residencial nace del diálogo con la historia, las costumbres y la identidad de cada persona.<br><br>
@@ -87,7 +86,7 @@
         <!-- FLIPPING HOUSES Section -->
         <section id="section-flipping" class="main-section">
             <div class="section-header">
-                <h1 class="section-title">Flipping</h1>
+                <h1 class="section-title">FLIPPING</h1>
                 <p class="section-text">
                     Creemos que el diseño arquitectónico también es una forma de generar valor.<br><br>
                     En el área de flipping, transformamos propiedades en oportunidades de inversión, revalorizándolas con propuestas estéticas y funcionales que las hacen únicas en el mercado.<br><br>
@@ -149,6 +148,7 @@
         </div>
     </footer>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>

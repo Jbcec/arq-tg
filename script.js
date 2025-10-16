@@ -178,9 +178,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         logoAnim.classList.add('shifted');
-        setTimeout(() => {
-            sloganAnim.classList.add('visible');
-        }, 600);
+        sloganAnim.classList.add('visible');
     }, 1000);
 
     setTimeout(() => {

@@ -1,3 +1,12 @@
+/* ==================== FONTS ==================== */
+@font-face {
+    font-family: 'Bigger Display';
+    src: url('fonts/BiggerDisplay.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ==================== RESET & BASE ==================== */
 * {
     margin: 0;
@@ -34,6 +43,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    position: relative;
 }
 
 #logo-anim {
@@ -43,10 +54,15 @@ body {
     color: #f3f1ed;
     transition: transform 0.8s ease;
     will-change: transform;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #logo-anim.shifted {
-    transform: translateX(-6vw);
+    transform: translateX(-10%);
+    position: relative;
+    left: auto;
 }
 
 #slogan-anim {
@@ -55,16 +71,19 @@ body {
     font-weight: 700;
     color: #f3f1ed;
     opacity: 0;
-    margin-left: 0;
-    transition: opacity 0.7s ease, margin-left 0.8s ease;
+    transform: translateX(-20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
     text-align: left;
     line-height: 0.95;
     display: inline-block;
+    visibility: hidden;
+    margin-left: 2vw;
 }
 
 #slogan-anim.visible {
     opacity: 1;
-    margin-left: 2vw;
+    transform: translateX(0);
+    visibility: visible;
 }
 
 /* ==================== HEADER ==================== */
