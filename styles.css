@@ -304,9 +304,9 @@ nav a:hover {
 }
 
 .project-name {
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-family: 'Bigger Display', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
     margin-bottom: 0.5vh;
     color: #222;
 }
