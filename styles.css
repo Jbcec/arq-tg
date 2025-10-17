@@ -436,6 +436,8 @@ nav a:hover {
 }
 
 .modal-nav {
+    height: 100%;
+    width: 35%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
