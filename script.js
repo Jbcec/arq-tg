@@ -1,6 +1,60 @@
 const projectsData = {
     social: [
         {
+            name: 'ANCHO',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+1',
+                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+2',
+                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+3'
+            ],
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2025',
+            design: 'Estudio Bend',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Garcia Paredes 27',
+            tag: 'Próximamente'
+        },
+        {
+            name: 'FENZZE',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+1',
+                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+2',
+                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+3'
+            ],
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2025',
+            design: 'Estudio Bend',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Castello 1',
+            tag: 'Próximamente'
+        },
+        {
+            name: 'BRAZZA',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/777/fff?text=BRAZZA+1',
+                'https://via.placeholder.com/800x600/777/fff?text=BRAZZA+2',
+                'https://via.placeholder.com/800x600/777/fff?text=BRAZZA+3'
+            ],
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2025',
+            design: 'Estudio Bend',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Garcia Paredes 27',
+            tag: 'Próximamente'
+        },
+        {
             name: 'JUANA LA LOCA',
             location: 'Madrid',
             images: [
@@ -9,28 +63,50 @@ const projectsData = {
                 'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+3',
                 'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2025',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Recoletos 10'
         },
         {
-            name: 'JUANA LA LOCA II',
+            name: 'PIZZA TRAIN',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-1',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-2',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+2-3'
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+1',
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+2',
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+3',
+                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2025',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Calle del Leon 3'
         },
         {
             name: 'LA VICCA',
-            location: 'Majadahonda',
+            location: 'Madrid',
             images: [
                 'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+1',
                 'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+2',
                 'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+3',
                 'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2024',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Pablo Picasso 3'
         },
         {
             name: 'PARADA CERO',
@@ -40,42 +116,17 @@ const projectsData = {
                 'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+2',
                 'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+3'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        },
-        {
-            name: 'PIZZA TRAIN',
-            location: 'Barcelona',
-            images: [
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+1',
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+2',
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+3',
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+4'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            category: 'Arquitectura Gastronómica',
+            area: '130 m²',
+            year: '2024',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Pablo Picasso 4'
         }
     ],
     residential: [
-        {
-            name: 'ALVEAR',
-            location: 'Madrid',
-            images: [
-                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+1',
-                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+2',
-                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+3'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        },
-        {
-            name: 'ARTURO SORIA',
-            location: 'Madrid',
-            images: [
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+1',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+2',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+3',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+4'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
-        },
         {
             name: 'C13',
             location: 'Madrid',
@@ -84,17 +135,33 @@ const projectsData = {
                 'https://via.placeholder.com/800x600/666/fff?text=C13+2',
                 'https://via.placeholder.com/800x600/666/fff?text=C13+3'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            category: 'Arquitectura Residencial',
+            area: '43 m²',
+            year: '2025',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Castello 13',
+            tag: 'Próximamente'
         },
         {
             name: 'LT',
-            location: 'Barcelona',
+            location: 'Madrid',
             images: [
                 'https://via.placeholder.com/800x600/666/fff?text=LT+1',
                 'https://via.placeholder.com/800x600/666/fff?text=LT+2',
                 'https://via.placeholder.com/800x600/666/fff?text=LT+3'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.'
+            category: 'Arquitectura Residencial',
+            area: '85 m²',
+            year: '2025',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'San Juan de Ortega 10',
+            tag: 'Próximamente'
         },
         {
             name: 'RB26',
@@ -105,17 +172,83 @@ const projectsData = {
                 'https://via.placeholder.com/800x600/666/fff?text=RB26+3',
                 'https://via.placeholder.com/800x600/666/fff?text=RB26+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+            category: 'Arquitectura Residencial',
+            area: '36 m²',
+            year: '2025',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Rufino Blanco 26'
+        },
+        {
+            name: 'ALVEAR',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+1',
+                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+2',
+                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+3'
+            ],
+            category: 'Arquitectura Residencial',
+            area: '240 m²',
+            year: '2025',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Av Alvear 1491'
+        },
+        {
+            name: 'ARTURO SORIA I',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+I+1',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+I+2',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+I+3'
+            ],
+            category: 'Arquitectura Residencial',
+            area: '200 m²',
+            year: '2023',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Lorenzo Solano Tendero 19'
+        },
+        {
+            name: 'ARTURO SORIA II',
+            location: 'Madrid',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+1',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+2',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+3',
+                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+4'
+            ],
+            category: 'Arquitectura Residencial',
+            area: '110 m²',
+            year: '2023',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Gran Vía de Hortaleza 5'
         },
         {
             name: 'RGS',
-            location: 'Valencia',
+            location: 'Madrid',
             images: [
                 'https://via.placeholder.com/800x600/666/fff?text=RGS+1',
                 'https://via.placeholder.com/800x600/666/fff?text=RGS+2',
                 'https://via.placeholder.com/800x600/666/fff?text=RGS+3'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit.'
+            category: 'Arquitectura Residencial',
+            area: '76 m²',
+            year: '2024',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Ramon Gomez de la Serna 25'
         },
         {
             name: 'SANCHINARRO',
@@ -126,7 +259,65 @@ const projectsData = {
                 'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+3',
                 'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+4'
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            category: 'Arquitectura Residencial',
+            area: '160 m²',
+            year: '2024',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Madrid',
+            country: 'España',
+            street: 'Ana de Austria 44'
+        },
+        {
+            name: 'GUIDO',
+            location: 'Buenos Aires',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=GUIDO+1',
+                'https://via.placeholder.com/800x600/666/fff?text=GUIDO+2',
+                'https://via.placeholder.com/800x600/666/fff?text=GUIDO+3'
+            ],
+            category: 'Arquitectura Residencial',
+            area: '160 m²',
+            year: '2023',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Ciudad de Buenos Aires',
+            country: 'Argentina',
+            street: 'Guido 135'
+        },
+        {
+            name: 'PALACIO ALCORTA',
+            location: 'Buenos Aires',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=PALACIO+ALCORTA+1',
+                'https://via.placeholder.com/800x600/666/fff?text=PALACIO+ALCORTA+2',
+                'https://via.placeholder.com/800x600/666/fff?text=PALACIO+ALCORTA+3'
+            ],
+            category: 'Arquitectura Residencial',
+            area: '130 m²',
+            year: '2023',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Ciudad de Buenos Aires',
+            country: 'Argentina',
+            street: 'Guido'
+        },
+        {
+            name: 'VIDT',
+            location: 'Buenos Aires',
+            images: [
+                'https://via.placeholder.com/800x600/666/fff?text=VIDT+1',
+                'https://via.placeholder.com/800x600/666/fff?text=VIDT+2',
+                'https://via.placeholder.com/800x600/666/fff?text=VIDT+3'
+            ],
+            category: 'Arquitectura Residencial',
+            area: '130 m²',
+            year: '2022',
+            design: 'Estudio IN SITU/',
+            construction: 'Estudio IN SITU/',
+            city: 'Ciudad de Buenos Aires',
+            country: 'Argentina',
+            street: 'Guido'
         }
     ],
     flipping: [
@@ -282,7 +473,47 @@ function updateModalContent() {
     const isFirstImage = currentImageIndex === 0;
     
     modalTitle.textContent = project.name;
-    modalText.textContent = project.description;
+    
+    // Generar el contenido con los datos del proyecto
+    if (project.category) {
+        modalText.innerHTML = `
+            <div class="modal-text-item">
+                <span class="modal-text-label">Categoría:</span>
+                <span class="modal-text-value">${project.category}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">Área:</span>
+                <span class="modal-text-value">${project.area}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">Año:</span>
+                <span class="modal-text-value">${project.year}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">Diseño:</span>
+                <span class="modal-text-value">${project.design}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">Construcción:</span>
+                <span class="modal-text-value">${project.construction}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">Ciudad:</span>
+                <span class="modal-text-value">${project.city}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">País:</span>
+                <span class="modal-text-value">${project.country}</span>
+            </div>
+            <div class="modal-text-item">
+                <span class="modal-text-label">Calle:</span>
+                <span class="modal-text-value">${project.street}</span>
+            </div>
+        `;
+    } else {
+        modalText.textContent = project.description || '';
+    }
+    
     modalImage.src = project.images[currentImageIndex];
     modalImage.alt = `${project.name} - Imagen ${currentImageIndex + 1}`;
     modalCounter.textContent = `${String(currentImageIndex + 1).padStart(2, '0')} — ${String(totalImages).padStart(2, '0')}`;
@@ -296,38 +527,8 @@ function updateModalContent() {
     if (isLastImage && hasNextProject) {
         const nextProject = projectsData[currentProjectSection][currentProjectIndex + 1];
         nextProjectData.innerHTML = `
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">${nextProject.name}</span>
-                <span class="next-project-data-value"></span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">Categoría</span>
-                <span class="next-project-data-value">Arquitectura Residencial</span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">Área</span>
-                <span class="next-project-data-value">450 m²</span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">Año</span>
-                <span class="next-project-data-value">2025</span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">Diseño</span>
-                <span class="next-project-data-value">Estudio Berd</span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">Contratista General</span>
-                <span class="next-project-data-value">Estudio IN SITU/</span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">Ciudad</span>
-                <span class="next-project-data-value">Madrid</span>
-            </div>
-            <div class="next-project-data-item">
-                <span class="next-project-data-label">País</span>
-                <span class="next-project-data-value">España</span>
-            </div>
+            <img src="${nextProject.images[0]}" alt="${nextProject.name}" class="next-project-thumbnail">
+            <div class="next-project-title">${nextProject.name}</div>
         `;
         nextProjectInfo.dataset.canShow = 'true';
     } else {
@@ -482,5 +683,41 @@ function renderProjects(section) {
             openProjectModal(section, index);
         });
         container.appendChild(card);
+    });
+}
+
+// ==================== GOOGLE MAPS ====================
+function initMap() {
+    // Centro del mapa en Madrid (Puerta del Sol)
+    const mapCenter = { lat: 40.4168, lng: -3.7038 };
+    
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: mapCenter,
+        mapTypeControl: true,
+        streetViewControl: true,
+        fullscreenControl: true
+    });
+    
+    // Crear un pin de ejemplo en Madrid
+    const marker = new google.maps.Marker({
+        position: mapCenter,
+        map: map,
+        title: 'IN SITU/ - Madrid'
+    });
+    
+    // Info Window con información básica
+    const infoWindow = new google.maps.InfoWindow({
+        content: `
+            <div style="padding: 10px;">
+                <h3 style="margin: 0 0 8px 0; font-family: 'Oswald', sans-serif; font-size: 1.2rem;">IN SITU/</h3>
+                <p style="margin: 0; font-size: 0.9rem; color: #666;">Madrid, España</p>
+            </div>
+        `
+    });
+    
+    // Mostrar info window al hacer click en el marker
+    marker.addListener('click', () => {
+        infoWindow.open(map, marker);
     });
 }

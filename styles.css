@@ -108,7 +108,7 @@ header.hidden {
 }
 
 .logo {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Bigger Display', Arial, sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -376,6 +376,9 @@ nav a:hover {
     overflow-y: auto;
     max-width: 400px;
     transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .modal-info.hide-description {
@@ -386,7 +389,7 @@ nav a:hover {
     font-family: 'Bigger Display', Arial, sans-serif;
     font-size: 7rem;
     font-weight: 700;
-    margin-bottom: 4vh;
+    margin-bottom: 0;
     line-height: 0.9;
     color: #fff;
     word-break: break-word;
@@ -395,8 +398,25 @@ nav a:hover {
 }
 
 .modal-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-top: auto;
+}
+
+.modal-text-item {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5vh;
+}
+
+.modal-text-label {
+    font-weight: 700;
+    color: #fff;
+}
+
+.modal-text-value {
+    font-weight: 400;
     color: #ddd;
 }
 
@@ -469,7 +489,7 @@ nav a:hover {
     transform: translateY(-50%);
     background: rgba(34, 34, 34, 0.98);
     color: #fff;
-    padding: 3vh 2.5vw;
+    padding: 2vh 1.5vw;
     border-radius: 8px;
     font-size: 0.9rem;
     opacity: 0;
@@ -477,7 +497,7 @@ nav a:hover {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     pointer-events: none;
     z-index: 10;
-    max-width: 250px;
+    max-width: 220px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -488,40 +508,33 @@ nav a:hover {
 
 .next-project-header {
     font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5vh;
     color: #ddd;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    padding-bottom: 1.5vh;
 }
 
 .next-project-data {
     display: flex;
     flex-direction: column;
-    gap: 1.5vh;
 }
 
-.next-project-data-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3vh;
+.next-project-thumbnail {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1.5vh;
 }
 
-.next-project-data-label {
-    font-size: 0.75rem;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-}
-
-.next-project-data-value {
-    font-size: 0.9rem;
+.next-project-title {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: #fff;
-    font-weight: 500;
+    line-height: 1.2;
 }
 
 /* ==================== FOOTER ==================== */
@@ -647,7 +660,7 @@ footer {
 
     .section-header {
         padding: 4vh 2vw 2vh 2vw;
-        text-align: left;
+        text-align: center;
     }
 
     .section-title {
@@ -676,22 +689,22 @@ footer {
         max-width: 100%;
         padding: 2vh 4vw;
         flex: none;
-        max-height: 25%;
-        overflow: hidden;
+        max-height: 35%;
+        overflow-y: auto;
     }
 
     .modal-title {
-        font-size: 3.5rem;
-        margin-bottom: 1vh;
+        font-size: 2.5rem;
+        margin-bottom: 2vh;
     }
 
     .modal-text {
-        font-size: 0.8rem;
-        max-height: 100%;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .modal-text-item {
+        margin-bottom: 0.3vh;
     }
 
     .modal-images {
