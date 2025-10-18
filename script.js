@@ -505,10 +505,6 @@ function updateModalContent() {
                 <span class="modal-text-label">País:</span>
                 <span class="modal-text-value">${project.country}</span>
             </div>
-            <div class="modal-text-item">
-                <span class="modal-text-label">Calle:</span>
-                <span class="modal-text-value">${project.street}</span>
-            </div>
         `;
     } else {
         modalText.textContent = project.description || '';
