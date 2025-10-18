@@ -109,7 +109,7 @@ header.hidden {
 
 .logo {
     font-family: 'Bigger Display', Arial, sans-serif;
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
     flex-shrink: 0;
@@ -198,6 +198,16 @@ nav a:hover {
     color: #222;
     max-width: 800px;
     text-align: left;
+}
+
+.coming-soon-text {
+    font-family: 'Bigger Display', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #999;
+    margin-top: 6vh;
+    text-align: left;
+    letter-spacing: 2px;
 }
 
 /* ==================== HERO SLIDER ==================== */
@@ -305,8 +315,8 @@ nav a:hover {
 
 .project-name {
     font-family: 'Bigger Display', Arial, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 0.5vh;
     color: #222;
 }
@@ -436,8 +446,6 @@ nav a:hover {
 }
 
 .modal-nav {
-    height: 100%;
-    width: 35%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -564,6 +572,47 @@ footer {
     opacity: 0.6;
 }
 
+/* ==================== FLOATING MEETING BUTTON ==================== */
+.floating-meeting-btn {
+    position: fixed;
+    bottom: 6vh;
+    right: 4vw;
+    background: #222;
+    color: #f3f1ed;
+    padding: 1.2vh 2vw;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    will-change: transform;
+}
+
+.floating-meeting-btn:hover {
+    background: #fff;
+    color: #222;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.meeting-icon {
+    flex-shrink: 0;
+}
+
+.floating-meeting-btn:hover .meeting-icon {
+    stroke: #222;
+}
+
+.meeting-text {
+    white-space: nowrap;
+}
+
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 1100px) {
     .projects-grid {
@@ -672,6 +721,11 @@ footer {
 
     .section-text {
         font-size: 1rem;
+    }
+
+    .coming-soon-text {
+        font-size: 2rem;
+        margin-top: 4vh;
     }
 
     .projects-grid {
@@ -793,5 +847,24 @@ footer {
     .map-container {
         height: 300px;
         margin: 2vh 2vw;
+    }
+
+    .floating-meeting-btn {
+        position: absolute;
+        bottom: 10%;
+        right: 4vw;
+        padding: 1vh 3vw;
+        font-size: 0.8rem;
+        gap: 0.6rem;
+        position: fixed;
+    }
+
+    .meeting-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .meeting-text {
+        display: none;
     }
 }
