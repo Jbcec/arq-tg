@@ -4,11 +4,9 @@ const projectsData = {
             name: 'ANCHO',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+1',
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+2',
-                'https://via.placeholder.com/800x600/777/fff?text=ANCHO+3'
+                'images/social/ancho/1.jpg',
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2025',
             design: 'Estudio Bend',
@@ -16,17 +14,14 @@ const projectsData = {
             city: 'Madrid',
             country: 'España',
             street: 'Garcia Paredes 27',
-            tag: 'Próximamente'
         },
         {
             name: 'FENZZE',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+1',
-                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+2',
-                'https://via.placeholder.com/800x600/777/fff?text=FENZZE+3'
+                'images/social/fenzze/1.jpg',
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2025',
             design: 'Estudio Bend',
@@ -34,17 +29,14 @@ const projectsData = {
             city: 'Madrid',
             country: 'España',
             street: 'Castello 1',
-            tag: 'Próximamente'
         },
         {
             name: 'BRAZZA',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=BRAZZA+1',
-                'https://via.placeholder.com/800x600/777/fff?text=BRAZZA+2',
-                'https://via.placeholder.com/800x600/777/fff?text=BRAZZA+3'
+                'images/social/brazza/1.jpg',
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2025',
             design: 'Estudio Bend',
@@ -52,18 +44,25 @@ const projectsData = {
             city: 'Madrid',
             country: 'España',
             street: 'Garcia Paredes 27',
-            tag: 'Próximamente'
         },
         {
             name: 'JUANA LA LOCA',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+1',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+2',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+3',
-                'https://via.placeholder.com/800x600/777/fff?text=JUANA+LA+LOCA+4'
+                'images/social/juana/1.jpg',
+                'images/social/juana/2.jpg',
+                'images/social/juana/3.jpg',
+                'images/social/juana/4.jpg',
+                'images/social/juana/5.jpg',
+                'images/social/juana/6.jpg',
+                'images/social/juana/7.jpg',
+                'images/social/juana/8.jpg',
+                'images/social/juana/9.jpg',
+                'images/social/juana/10.jpg',
+                'images/social/juana/11.jpg',
+                'images/social/juana/12.jpg',
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2025',
             design: 'Estudio IN SITU/',
@@ -76,12 +75,14 @@ const projectsData = {
             name: 'PIZZA TRAIN',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+1',
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+2',
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+3',
-                'https://via.placeholder.com/800x600/777/fff?text=PIZZA+TRAIN+4'
+                'images/social/pizzatrain/1.jpg',
+                'images/social/pizzatrain/2.jpg',
+                'images/social/pizzatrain/3.jpg',
+                'images/social/pizzatrain/4.jpg',
+                'images/social/pizzatrain/5.jpg',
+                'images/social/pizzatrain/6.jpg',
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2025',
             design: 'Estudio IN SITU/',
@@ -94,12 +95,20 @@ const projectsData = {
             name: 'LA VICCA',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+1',
-                'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+2',
-                'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+3',
-                'https://via.placeholder.com/800x600/777/fff?text=LA+VICCA+4'
+                'images/social/lavicca/1.jpg',
+                'images/social/lavicca/2.jpg',
+                'images/social/lavicca/3.jpg',
+                'images/social/lavicca/4.jpg',
+                'images/social/lavicca/5.jpg',
+                'images/social/lavicca/6.jpg',
+                'images/social/lavicca/7.jpg',
+                'images/social/lavicca/8.jpg',
+                'images/social/lavicca/9.jpg',
+                'images/social/lavicca/10.jpg',
+                'images/social/lavicca/11.jpg',
+                'images/social/lavicca/12.jpg',  
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2024',
             design: 'Estudio IN SITU/',
@@ -112,11 +121,14 @@ const projectsData = {
             name: 'PARADA CERO',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+1',
-                'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+2',
-                'https://via.placeholder.com/800x600/777/fff?text=PARADA+CERO+3'
+                'images/social/paradacero/1.jpeg',
+                'images/social/paradacero/2.jpeg',
+                'images/social/paradacero/3.jpeg',
+                'images/social/paradacero/4.HEIC',
+                'images/social/paradacero/5.jpeg',
+                'images/social/paradacero/6.jpeg',
             ],
-            category: 'Arquitectura Gastronómica',
+            category: 'Arquitectura Gastronomica',
             area: '130 m²',
             year: '2024',
             design: 'Estudio IN SITU/',
@@ -131,9 +143,7 @@ const projectsData = {
             name: 'C13',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=C13+1',
-                'https://via.placeholder.com/800x600/666/fff?text=C13+2',
-                'https://via.placeholder.com/800x600/666/fff?text=C13+3'
+                'images/residencial/c13/1.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '43 m²',
@@ -143,15 +153,12 @@ const projectsData = {
             city: 'Madrid',
             country: 'España',
             street: 'Castello 13',
-            tag: 'Próximamente'
         },
         {
             name: 'LT',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=LT+1',
-                'https://via.placeholder.com/800x600/666/fff?text=LT+2',
-                'https://via.placeholder.com/800x600/666/fff?text=LT+3'
+                'images/residencial/lt/1.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '85 m²',
@@ -161,16 +168,12 @@ const projectsData = {
             city: 'Madrid',
             country: 'España',
             street: 'San Juan de Ortega 10',
-            tag: 'Próximamente'
         },
         {
             name: 'RB26',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=RB26+1',
-                'https://via.placeholder.com/800x600/666/fff?text=RB26+2',
-                'https://via.placeholder.com/800x600/666/fff?text=RB26+3',
-                'https://via.placeholder.com/800x600/666/fff?text=RB26+4'
+                'images/residencial/rb26/1.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '36 m²',
@@ -185,9 +188,15 @@ const projectsData = {
             name: 'ALVEAR',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+1',
-                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+2',
-                'https://via.placeholder.com/800x600/666/fff?text=ALVEAR+3'
+                'images/residencial/alvear/1.jpg',
+                'images/residencial/alvear/2.jpg',
+                'images/residencial/alvear/3.jpg',
+                'images/residencial/alvear/4.jpg',
+                'images/residencial/alvear/5.jpg',
+                'images/residencial/alvear/6.jpg', 
+                'images/residencial/alvear/7.jpg',
+                'images/residencial/alvear/8.jpg',
+                'images/residencial/alvear/9.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '240 m²',
@@ -202,9 +211,12 @@ const projectsData = {
             name: 'ARTURO SORIA I',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+I+1',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+I+2',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+I+3'
+                'images/residencial/asoria1/1.JPG',
+                'images/residencial/asoria1/2.jpg',
+                'images/residencial/asoria1/3.jpg',
+                'images/residencial/asoria1/4.jpg',
+                'images/residencial/asoria1/5.jpg',
+                'images/residencial/asoria1/6.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '200 m²',
@@ -219,10 +231,14 @@ const projectsData = {
             name: 'ARTURO SORIA II',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+1',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+2',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+3',
-                'https://via.placeholder.com/800x600/666/fff?text=ARTURO+SORIA+II+4'
+                'images/residencial/asoria2/1.jpg',
+                'images/residencial/asoria2/2.jpg',
+                'images/residencial/asoria2/3.jpg',
+                'images/residencial/asoria2/4.jpg',
+                'images/residencial/asoria2/5.jpg',
+                'images/residencial/asoria2/6.jpg',
+                'images/residencial/asoria2/7.jpg',
+                'images/residencial/asoria2/8.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '110 m²',
@@ -231,15 +247,20 @@ const projectsData = {
             construction: 'Estudio IN SITU/',
             city: 'Madrid',
             country: 'España',
-            street: 'Gran Vía de Hortaleza 5'
+            street: 'Gran Via de Hortaleza 5'
         },
         {
             name: 'RGS',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=RGS+1',
-                'https://via.placeholder.com/800x600/666/fff?text=RGS+2',
-                'https://via.placeholder.com/800x600/666/fff?text=RGS+3'
+                'images/residencial/rgs/1.jpg',
+                'images/residencial/rgs/2.jpg',
+                'images/residencial/rgs/3.jpg',
+                'images/residencial/rgs/4.jpg',
+                'images/residencial/rgs/5.jpg',
+                'images/residencial/rgs/6.jpg',
+                'images/residencial/rgs/8.jpg',
+                'images/residencial/rgs/9.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '76 m²',
@@ -254,10 +275,15 @@ const projectsData = {
             name: 'SANCHINARRO',
             location: 'Madrid',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+1',
-                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+2',
-                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+3',
-                'https://via.placeholder.com/800x600/666/fff?text=SANCHINARRO+4'
+                'images/residencial/sanchinarro/1.jpg',
+                'images/residencial/sanchinarro/2.jpg',
+                'images/residencial/sanchinarro/3.jpg',
+                'images/residencial/sanchinarro/4.jpg',
+                'images/residencial/sanchinarro/5.jpg',
+                'images/residencial/sanchinarro/6.jpg',
+                'images/residencial/sanchinarro/7.jpg',
+                'images/residencial/sanchinarro/8.jpg',
+                'images/residencial/sanchinarro/9.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '160 m²',
@@ -272,9 +298,17 @@ const projectsData = {
             name: 'GUIDO',
             location: 'Buenos Aires',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=GUIDO+1',
-                'https://via.placeholder.com/800x600/666/fff?text=GUIDO+2',
-                'https://via.placeholder.com/800x600/666/fff?text=GUIDO+3'
+                'images/residencial/guido/1.jpg',
+                'images/residencial/guido/2.jpg',
+                'images/residencial/guido/3.jpg',
+                'images/residencial/guido/4.jpg',
+                'images/residencial/guido/5.jpg',
+                'images/residencial/guido/6.HEIC',
+                'images/residencial/guido/7.HEIC',
+                'images/residencial/guido/8.HEIC',
+                'images/residencial/guido/9.HEIC',
+                'images/residencial/guido/10.jpg',
+                'images/residencial/guido/11.jpg',
             ],
             category: 'Arquitectura Residencial',
             area: '160 m²',
@@ -289,9 +323,15 @@ const projectsData = {
             name: 'PALACIO ALCORTA',
             location: 'Buenos Aires',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=PALACIO+ALCORTA+1',
-                'https://via.placeholder.com/800x600/666/fff?text=PALACIO+ALCORTA+2',
-                'https://via.placeholder.com/800x600/666/fff?text=PALACIO+ALCORTA+3'
+                'images/residencial/palcorta/1.JPG',
+                'images/residencial/palcorta/2.JPG',
+                'images/residencial/palcorta/3.JPG',
+                'images/residencial/palcorta/4.JPG',
+                'images/residencial/palcorta/5.JPG',
+                'images/residencial/palcorta/6.JPG',
+                'images/residencial/palcorta/7.JPG',
+                'images/residencial/palcorta/8.JPG',
+                'images/residencial/palcorta/9.JPG',
             ],
             category: 'Arquitectura Residencial',
             area: '130 m²',
@@ -306,9 +346,12 @@ const projectsData = {
             name: 'VIDT',
             location: 'Buenos Aires',
             images: [
-                'https://via.placeholder.com/800x600/666/fff?text=VIDT+1',
-                'https://via.placeholder.com/800x600/666/fff?text=VIDT+2',
-                'https://via.placeholder.com/800x600/666/fff?text=VIDT+3'
+                'images/residencial/vidt/1.JPG',
+                'images/residencial/vidt/2.JPG',
+                'images/residencial/vidt/3.JPG',
+                'images/residencial/vidt/4.JPG',
+                'images/residencial/vidt/5.JPG',
+                'images/residencial/vidt/6.JPG',
             ],
             category: 'Arquitectura Residencial',
             area: '130 m²',
@@ -318,39 +361,6 @@ const projectsData = {
             city: 'Ciudad de Buenos Aires',
             country: 'Argentina',
             street: 'Guido'
-        }
-    ],
-    flipping: [
-        {
-            name: 'PROYECTO FLIPPING 1',
-            location: 'Madrid',
-            images: [
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+1-1',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+1-2',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+1-3'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        },
-        {
-            name: 'PROYECTO FLIPPING 2',
-            location: 'Barcelona',
-            images: [
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-1',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-2',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-3',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+2-4'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
-        },
-        {
-            name: 'PROYECTO FLIPPING 3',
-            location: 'Valencia',
-            images: [
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+3-1',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+3-2',
-                'https://via.placeholder.com/800x600/888/fff?text=FLIPPING+3-3'
-            ],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
         }
     ]
 };
@@ -381,7 +391,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
     renderProjects('social');
     renderProjects('residential');
-    renderProjects('flipping');
 });
 
 // ==================== MOBILE NAVIGATION ====================
@@ -474,15 +483,14 @@ function updateModalContent() {
     
     modalTitle.textContent = project.name;
     
-    // Generar el contenido con los datos del proyecto
     if (project.category) {
         modalText.innerHTML = `
             <div class="modal-text-item">
-                <span class="modal-text-label">Categoría:</span>
+                <span class="modal-text-label">Categoria:</span>
                 <span class="modal-text-value">${project.category}</span>
             </div>
             <div class="modal-text-item">
-                <span class="modal-text-label">Área:</span>
+                <span class="modal-text-label">Area:</span>
                 <span class="modal-text-value">${project.area}</span>
             </div>
             <div class="modal-text-item">
@@ -494,7 +502,7 @@ function updateModalContent() {
                 <span class="modal-text-value">${project.design}</span>
             </div>
             <div class="modal-text-item">
-                <span class="modal-text-label">Construcción:</span>
+                <span class="modal-text-label">Construccion:</span>
                 <span class="modal-text-value">${project.construction}</span>
             </div>
             <div class="modal-text-item">
@@ -502,7 +510,7 @@ function updateModalContent() {
                 <span class="modal-text-value">${project.city}</span>
             </div>
             <div class="modal-text-item">
-                <span class="modal-text-label">País:</span>
+                <span class="modal-text-label">Pais:</span>
                 <span class="modal-text-value">${project.country}</span>
             </div>
         `;
@@ -576,7 +584,6 @@ modalNext.addEventListener('click', (e) => {
     navigateModalImage('next');
 });
 
-// Show next project info on hover - FIX PRINCIPAL
 modalNext.addEventListener('mouseenter', () => {
     if (nextProjectInfo.dataset.canShow === 'true') {
         nextProjectInfo.classList.add('visible');
@@ -616,7 +623,6 @@ function resetModalInactivity() {
     modalInactivityTimer = setTimeout(hideModalUI, 3000);
 }
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (modal.classList.contains('active')) {
         if (e.key === 'Escape') {
@@ -668,6 +674,7 @@ function renderProjects(section) {
     projectsData[section].forEach((project, index) => {
         const card = document.createElement('div');
         card.className = 'project-card';
+        
         card.innerHTML = `
             <img src="${project.images[0]}" alt="${project.name}" class="project-image">
             <div class="project-info">
@@ -683,37 +690,267 @@ function renderProjects(section) {
 }
 
 // ==================== GOOGLE MAPS ====================
-function initMap() {
-    // Centro del mapa en Madrid (Puerta del Sol)
+window.initMap = function() {
     const mapCenter = { lat: 40.4168, lng: -3.7038 };
+    
+    const mapStyles = [
+        {
+            "elementType": "geometry",
+            "stylers": [{"color": "#d4d4d4"}]
+        },
+        {
+            "elementType": "labels.icon",
+            "stylers": [{"visibility": "off"}]
+        },
+        {
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#424242"}]
+        },
+        {
+            "elementType": "labels.text.stroke",
+            "stylers": [{"color": "#d4d4d4"}]
+        },
+        {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#8a8a8a"}]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{"color": "#c8c8c8"}]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#5a5a5a"}]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [{"color": "#b8b8b8"}]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#6a6a6a"}]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [{"color": "#e8e8e8"}]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#5a5a5a"}]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [{"color": "#c0c0c0"}]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#424242"}]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#6a6a6a"}]
+        },
+        {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [{"color": "#b8b8b8"}]
+        },
+        {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [{"color": "#c8c8c8"}]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{"color": "#9a9a9a"}]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [{"color": "#6a6a6a"}]
+        }
+    ];
     
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         center: mapCenter,
+        styles: mapStyles,
         mapTypeControl: true,
         streetViewControl: true,
         fullscreenControl: true
     });
     
-    // Crear un pin de ejemplo en Madrid
-    const marker = new google.maps.Marker({
-        position: mapCenter,
-        map: map,
-        title: 'IN SITU/ - Madrid'
+    const geocoder = new google.maps.Geocoder();
+    const infoWindow = new google.maps.InfoWindow();
+    const markers = [];
+    
+    // Recopilar todas las direcciones únicas de los proyectos
+    const allProjects = [...projectsData.social, ...projectsData.residential];
+    const uniqueAddresses = new Map();
+    
+    allProjects.forEach(project => {
+        const address = `${project.street}, ${project.city}, ${project.country}`;
+        // Encontrar el índice y sección del proyecto
+        let projectSection = '';
+        let projectIndex = -1;
+        
+        const socialIndex = projectsData.social.findIndex(p => p.name === project.name);
+        if (socialIndex !== -1) {
+            projectSection = 'social';
+            projectIndex = socialIndex;
+        } else {
+            const residentialIndex = projectsData.residential.findIndex(p => p.name === project.name);
+            if (residentialIndex !== -1) {
+                projectSection = 'residential';
+                projectIndex = residentialIndex;
+            }
+        }
+        
+        if (!uniqueAddresses.has(address)) {
+            uniqueAddresses.set(address, []);
+        }
+        uniqueAddresses.get(address).push({
+            ...project,
+            section: projectSection,
+            index: projectIndex
+        });
     });
     
-    // Info Window con información básica
-    const infoWindow = new google.maps.InfoWindow({
-        content: `
-            <div style="padding: 10px;">
-                <h3 style="margin: 0 0 8px 0; font-family: 'Oswald', sans-serif; font-size: 1.2rem;">IN SITU/</h3>
-                <p style="margin: 0; font-size: 0.9rem; color: #666;">Madrid, España</p>
-            </div>
-        `
-    });
+    // Crear marcadores para cada dirección única
+    let markersCreated = 0;
+    const totalAddresses = uniqueAddresses.size;
     
-    // Mostrar info window al hacer click en el marker
-    marker.addListener('click', () => {
-        infoWindow.open(map, marker);
+    uniqueAddresses.forEach((projects, address) => {
+        geocoder.geocode({ address: address }, (results, status) => {
+            if (status === 'OK') {
+                const marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location,
+                    title: projects.map(p => p.name).join(', '),
+                    animation: google.maps.Animation.DROP
+                });
+                
+                markers.push(marker);
+                
+                // Si hay un solo proyecto en esta dirección, abrir modal directamente
+                if (projects.length === 1) {
+                    marker.addListener('click', () => {
+                        const project = projects[0];
+                        openProjectModal(project.section, project.index);
+                    });
+                } else {
+                    // Si hay múltiples proyectos, mostrar InfoWindow con lista clickeable
+                    let infoContent = `
+                        <div style="padding: 12px; font-family: 'Helvetica', Arial, sans-serif; max-width: 280px;">
+                            <div style="margin-bottom: 10px;">
+                                <strong style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 0.5px;">
+                                    ${projects[0].street}
+                                </strong>
+                            </div>
+                    `;
+                    
+                    projects.forEach(project => {
+                        infoContent += `
+                            <div class="map-project-item" data-section="${project.section}" data-index="${project.index}" style="margin-bottom: 8px; padding: 8px; border-bottom: 1px solid #eee; cursor: pointer; transition: background 0.2s;">
+                                <h3 style="margin: 0 0 4px 0; font-size: 1.1rem; color: #222; font-weight: 700;">
+                                    ${project.name}
+                                </h3>
+                                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                                    ${project.category}
+                                </p>
+                                <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: #999;">
+                                    ${project.area} • ${project.year}
+                                </p>
+                            </div>
+                        `;
+                    });
+                    
+                    infoContent += `
+                            <style>
+                                .map-project-item:hover {
+                                    background: #f5f5f5;
+                                    border-radius: 4px;
+                                }
+                            </style>
+                        </div>
+                    `;
+                    
+                    marker.addListener('click', () => {
+                        infoWindow.setContent(infoContent);
+                        infoWindow.open(map, marker);
+                        
+                        // Esperar a que el InfoWindow se renderice para agregar event listeners
+                        google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
+                            const projectItems = document.querySelectorAll('.map-project-item');
+                            projectItems.forEach(item => {
+                                item.addEventListener('click', () => {
+                                    const section = item.getAttribute('data-section');
+                                    const index = parseInt(item.getAttribute('data-index'));
+                                    infoWindow.close();
+                                    openProjectModal(section, index);
+                                });
+                            });
+                        });
+                    });
+                }
+                
+                markersCreated++;
+                
+                // Cuando todos los marcadores estén creados, crear el cluster y ajustar bounds
+                if (markersCreated === totalAddresses) {
+                    // Crear el MarkerClusterer con configuración personalizada
+                    new markerClusterer.MarkerClusterer({
+                        map,
+                        markers,
+                        algorithm: new markerClusterer.SuperClusterAlgorithm({ radius: 100 }),
+                        renderer: {
+                            render: ({ count, position }) => {
+                                // Estilo personalizado para los clusters
+                                const svg = `
+                                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="22" fill="#222" fill-opacity="0.9"/>
+                                        <circle cx="25" cy="25" r="22" fill="none" stroke="#fff" stroke-width="2"/>
+                                        <text x="25" y="30" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">${count}</text>
+                                    </svg>
+                                `;
+                                
+                                return new google.maps.Marker({
+                                    position,
+                                    icon: {
+                                        url: `data:image/svg+xml;base64,${btoa(svg)}`,
+                                        scaledSize: new google.maps.Size(50, 50),
+                                    },
+                                    label: {
+                                        text: String(count),
+                                        color: "transparent",
+                                    },
+                                    zIndex: 1000 + count,
+                                });
+                            },
+                        },
+                    });
+                    
+                    // Ajustar el mapa para mostrar todos los marcadores
+                    const bounds = new google.maps.LatLngBounds();
+                    markers.forEach(marker => {
+                        bounds.extend(marker.getPosition());
+                    });
+                    map.fitBounds(bounds);
+                }
+            } else {
+                console.warn('Geocoding falló para: ' + address + ' Razón: ' + status);
+            }
+        });
     });
-}
+};
