@@ -67,8 +67,8 @@ body {
     color: #f3f1ed;
     opacity: 0;
     transform: translateX(20px);
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, 
-                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s,
+        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     text-align: left;
     line-height: 0.95;
     display: inline-block;
@@ -404,7 +404,7 @@ nav a:hover {
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: #222;
     background: none;
     border: none;
     cursor: pointer;
@@ -412,6 +412,8 @@ nav a:hover {
     transition: color 0.3s ease, opacity 0.3s ease;
     user-select: none;
     z-index: 5;
+    height: 90%;
+    width: 35%;
 }
 
 .modal-nav:hover {
