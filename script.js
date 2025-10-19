@@ -275,7 +275,7 @@ const projectsData = {
             name: 'SANCHINARRO',
             location: 'Madrid',
             images: [
-                'images/residencial/sanchinarro/1.jpg',
+                'images/residencial/sanchinarro/1.JPG',
                 'images/residencial/sanchinarro/2.jpg',
                 'images/residencial/sanchinarro/3.jpg',
                 'images/residencial/sanchinarro/4.jpg',
