@@ -173,7 +173,15 @@ const projectsData = {
             name: 'RB26',
             location: 'Madrid',
             images: [
-                'images/residencial/rb26/1.jpg',
+                'images/residencial/rb26/1.jpeg',
+                'images/residencial/rb26/2.jpeg',
+                'images/residencial/rb26/3.jpeg',
+                'images/residencial/rb26/4.jpeg',
+                'images/residencial/rb26/5.jpeg',
+                'images/residencial/rb26/6.jpeg',
+                'images/residencial/rb26/7.jpeg',
+                'images/residencial/rb26/8.jpeg',
+                'images/residencial/rb26/9.jpeg',
             ],
             category: 'Arquitectura Residencial',
             area: '36 m²',
@@ -387,6 +395,17 @@ window.addEventListener('DOMContentLoaded', () => {
     
     renderProjects('social');
     renderProjects('residential');
+    
+    // Animación del botón flotante en mobile
+    if (window.innerWidth <= 700) {
+        const meetingBtn = document.querySelector('.floating-meeting-btn');
+        if (meetingBtn) {
+            // Esperar 3.5 segundos después de que termine la animación de bienvenida
+            setTimeout(() => {
+                meetingBtn.classList.add('collapsed');
+            }, 8000);
+        }
+    }
 });
 
 // ==================== MOBILE NAVIGATION ====================
@@ -791,13 +810,11 @@ window.initMap = function() {
     const infoWindow = new google.maps.InfoWindow();
     const markers = [];
     
-    // Recopilar todas las direcciones únicas de los proyectos
     const allProjects = [...projectsData.social, ...projectsData.residential];
     const uniqueAddresses = new Map();
     
     allProjects.forEach(project => {
         const address = `${project.street}, ${project.city}, ${project.country}`;
-        // Encontrar el índice y sección del proyecto
         let projectSection = '';
         let projectIndex = -1;
         
@@ -823,7 +840,6 @@ window.initMap = function() {
         });
     });
     
-    // Crear marcadores para cada dirección única
     let markersCreated = 0;
     const totalAddresses = uniqueAddresses.size;
     
@@ -839,14 +855,12 @@ window.initMap = function() {
                 
                 markers.push(marker);
                 
-                // Si hay un solo proyecto en esta dirección, abrir modal directamente
                 if (projects.length === 1) {
                     marker.addListener('click', () => {
                         const project = projects[0];
                         openProjectModal(project.section, project.index);
                     });
                 } else {
-                    // Si hay múltiples proyectos, mostrar InfoWindow con lista clickeable
                     let infoContent = `
                         <div style="padding: 12px; font-family: 'Helvetica', Arial, sans-serif; max-width: 280px;">
                             <div style="margin-bottom: 10px;">
@@ -886,7 +900,6 @@ window.initMap = function() {
                         infoWindow.setContent(infoContent);
                         infoWindow.open(map, marker);
                         
-                        // Esperar a que el InfoWindow se renderice para agregar event listeners
                         google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
                             const projectItems = document.querySelectorAll('.map-project-item');
                             projectItems.forEach(item => {
@@ -903,16 +916,13 @@ window.initMap = function() {
                 
                 markersCreated++;
                 
-                // Cuando todos los marcadores estén creados, crear el cluster y ajustar bounds
                 if (markersCreated === totalAddresses) {
-                    // Crear el MarkerClusterer con configuración personalizada
                     new markerClusterer.MarkerClusterer({
                         map,
                         markers,
                         algorithm: new markerClusterer.SuperClusterAlgorithm({ radius: 100 }),
                         renderer: {
                             render: ({ count, position }) => {
-                                // Estilo personalizado para los clusters
                                 const svg = `
                                     <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="25" cy="25" r="22" fill="#222" fill-opacity="0.9"/>
@@ -937,7 +947,6 @@ window.initMap = function() {
                         },
                     });
                     
-                    // Ajustar el mapa para mostrar todos los marcadores
                     const bounds = new google.maps.LatLngBounds();
                     markers.forEach(marker => {
                         bounds.extend(marker.getPosition());

@@ -240,8 +240,8 @@ nav a:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
 }
 
 .project-image {
@@ -301,8 +301,8 @@ nav a:hover {
 
 .modal-close {
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    top: 20px;
+    right: 20px;
     font-size: 3rem;
     color: #fff;
     background: none;
@@ -325,8 +325,8 @@ nav a:hover {
 .modal-content {
     background: #222;
     width: 100%;
-    max-width: 1200px;
-    height: 80vh;
+    max-width: 1400px;
+    height: 85vh;
     border-radius: 8px;
     display: flex;
     position: relative;
@@ -338,7 +338,7 @@ nav a:hover {
     padding: 6vh 3vw;
     color: #fff;
     overflow-y: auto;
-    max-width: 400px;
+    max-width: 450px;
     transition: opacity 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -391,11 +391,12 @@ nav a:hover {
     justify-content: center;
     position: relative;
     background: #1a1a1a;
+    padding: 40px;
 }
 
 .modal-image {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: calc(100% - 80px);
+    max-height: calc(100% - 80px);
     object-fit: contain;
 }
 
@@ -435,8 +436,8 @@ nav a:hover {
 
 .modal-counter {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 40px;
+    right: 40px;
     color: #fff;
     font-size: 1rem;
     transition: opacity 0.3s ease;
@@ -757,17 +758,36 @@ footer {
     .floating-meeting-btn {
         bottom: 4vh;
         right: 4vw;
-        padding: 1vh 3vw;
-        font-size: 0.8rem;
-        gap: 0.6rem;
+        padding: 1.2vh 2vw;
+        font-size: 0.85rem;
+        gap: 0.8rem;
+        width: auto;
+        transition: all 0.5s ease;
+    }
+    
+    .floating-meeting-btn.collapsed {
+        padding: 1.2vh 1.2vh;
+        gap: 0;
     }
 
     .meeting-icon {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
     }
 
     .meeting-text {
-        display: none;
+        display: inline;
+        max-width: 200px;
+        opacity: 1;
+        white-space: nowrap;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    
+    .floating-meeting-btn.collapsed .meeting-text {
+        max-width: 0;
+        opacity: 0;
+        margin: 0;
     }
 }
