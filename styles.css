@@ -391,12 +391,13 @@ nav a:hover {
     justify-content: center;
     position: relative;
     background: #1a1a1a;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 70px;
 }
 
 .modal-image {
     max-width: calc(100% - 80px);
-    max-height: calc(100% - 80px);
+    height: 100%;
     object-fit: contain;
 }
 
