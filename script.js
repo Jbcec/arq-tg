@@ -106,7 +106,7 @@ const projectsData = {
                 'images/social/lavicca/9.jpg',
                 'images/social/lavicca/10.jpg',
                 'images/social/lavicca/11.jpg',
-                'images/social/lavicca/12.jpg',  
+                'images/social/lavicca/12.jpg',
             ],
             category: 'Arquitectura Gastronomica',
             area: '130 m²',
@@ -201,7 +201,7 @@ const projectsData = {
                 'images/residencial/alvear/3.jpg',
                 'images/residencial/alvear/4.jpg',
                 'images/residencial/alvear/5.jpg',
-                'images/residencial/alvear/6.jpg', 
+                'images/residencial/alvear/6.jpg',
                 'images/residencial/alvear/7.jpg',
                 'images/residencial/alvear/8.jpg',
                 'images/residencial/alvear/9.jpg',
@@ -392,10 +392,10 @@ window.addEventListener('DOMContentLoaded', () => {
             welcome.style.display = 'none';
         }, 1000);
     }, 3200);
-    
+
     renderProjects('social');
     renderProjects('residential');
-    
+
     // Animación del botón flotante en mobile
     if (window.innerWidth <= 700) {
         const meetingBtn = document.querySelector('.floating-meeting-btn');
@@ -433,13 +433,13 @@ navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const section = link.dataset.section;
-        
+
         navLinks.forEach(l => l.classList.remove('active'));
         link.classList.add('active');
-        
+
         sections.forEach(s => s.classList.remove('active'));
         document.getElementById(`section-${section}`).classList.add('active');
-        
+
         navList.classList.remove('show');
     });
 });
@@ -449,13 +449,13 @@ const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
-    
+
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
         header.classList.add('hidden');
     } else {
         header.classList.remove('hidden');
     }
-    
+
     lastScrollY = currentScrollY;
 });
 
@@ -476,7 +476,7 @@ function openProjectModal(section, projectIndex) {
     currentProjectSection = section;
     currentProjectIndex = projectIndex;
     currentImageIndex = 0;
-    
+
     updateModalContent();
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -495,9 +495,9 @@ function updateModalContent() {
     const isLastImage = currentImageIndex === totalImages - 1;
     const hasNextProject = currentProjectIndex < projectsData[currentProjectSection].length - 1;
     const isFirstImage = currentImageIndex === 0;
-    
+
     modalTitle.textContent = project.name;
-    
+
     if (project.category) {
         modalText.innerHTML = `
             <div class="modal-text-item">
@@ -532,17 +532,17 @@ function updateModalContent() {
     } else {
         modalText.textContent = project.description || '';
     }
-    
+
     modalImage.src = project.images[currentImageIndex];
     modalImage.alt = `${project.name} - Imagen ${currentImageIndex + 1}`;
     modalCounter.textContent = `${String(currentImageIndex + 1).padStart(2, '0')} — ${String(totalImages).padStart(2, '0')}`;
-    
+
     if (isFirstImage) {
         modalInfo.classList.remove('hide-description');
     } else {
         modalInfo.classList.add('hide-description');
     }
-    
+
     if (isLastImage && hasNextProject) {
         const nextProject = projectsData[currentProjectSection][currentProjectIndex + 1];
         nextProjectData.innerHTML = `
@@ -554,7 +554,7 @@ function updateModalContent() {
         nextProjectInfo.dataset.canShow = 'false';
         nextProjectInfo.classList.remove('visible');
     }
-    
+
     resetModalInactivity();
 }
 
@@ -564,7 +564,7 @@ function navigateModalImage(direction) {
     const isLastImage = currentImageIndex === totalImages - 1;
     const hasNextProject = currentProjectIndex < projectsData[currentProjectSection].length - 1;
     const hasPrevProject = currentProjectIndex > 0;
-    
+
     if (direction === 'next') {
         if (isLastImage && hasNextProject) {
             currentProjectIndex++;
@@ -580,7 +580,7 @@ function navigateModalImage(direction) {
             currentImageIndex = projectsData[currentProjectSection][currentProjectIndex].images.length - 1;
         }
     }
-    
+
     updateModalContent();
 }
 
@@ -683,13 +683,13 @@ function renderProjects(section) {
     if (!container || !projectsData[section]) {
         return;
     }
-    
+
     container.innerHTML = '';
-    
+
     projectsData[section].forEach((project, index) => {
         const card = document.createElement('div');
         card.className = 'project-card';
-        
+
         card.innerHTML = `
             <img src="${project.images[0]}" alt="${project.name}" class="project-image">
             <div class="project-info">
@@ -705,98 +705,98 @@ function renderProjects(section) {
 }
 
 // ==================== GOOGLE MAPS ====================
-window.initMap = function() {
+window.initMap = function () {
     const mapCenter = { lat: 40.4168, lng: -3.7038 };
-    
+
     const mapStyles = [
         {
             "elementType": "geometry",
-            "stylers": [{"color": "#ededed"}]
+            "stylers": [{ "color": "#ededed" }]
         },
         {
             "elementType": "labels.icon",
-            "stylers": [{"visibility": "off"}]
+            "stylers": [{ "visibility": "off" }]
         },
         {
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#222"}]
+            "stylers": [{ "color": "#222" }]
         },
         {
             "elementType": "labels.text.stroke",
-            "stylers": [{"color": "#ededed"}]
+            "stylers": [{ "color": "#ededed" }]
         },
         {
             "featureType": "administrative.land_parcel",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#666"}]
+            "stylers": [{ "color": "#666" }]
         },
         {
             "featureType": "poi",
             "elementType": "geometry",
-            "stylers": [{"color": "#f5f5f5"}]
+            "stylers": [{ "color": "#f5f5f5" }]
         },
         {
             "featureType": "poi",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#444"}]
+            "stylers": [{ "color": "#444" }]
         },
         {
             "featureType": "poi.park",
             "elementType": "geometry",
-            "stylers": [{"color": "#e8e8e8"}]
+            "stylers": [{ "color": "#e8e8e8" }]
         },
         {
             "featureType": "poi.park",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#555"}]
+            "stylers": [{ "color": "#555" }]
         },
         {
             "featureType": "road",
             "elementType": "geometry",
-            "stylers": [{"color": "#ffffff"}]
+            "stylers": [{ "color": "#ffffff" }]
         },
         {
             "featureType": "road.arterial",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#444"}]
+            "stylers": [{ "color": "#444" }]
         },
         {
             "featureType": "road.highway",
             "elementType": "geometry",
-            "stylers": [{"color": "#f8f8f8"}]
+            "stylers": [{ "color": "#f8f8f8" }]
         },
         {
             "featureType": "road.highway",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#222"}]
+            "stylers": [{ "color": "#222" }]
         },
         {
             "featureType": "road.local",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#555"}]
+            "stylers": [{ "color": "#555" }]
         },
         {
             "featureType": "transit.line",
             "elementType": "geometry",
-            "stylers": [{"color": "#e8e8e8"}]
+            "stylers": [{ "color": "#e8e8e8" }]
         },
         {
             "featureType": "transit.station",
             "elementType": "geometry",
-            "stylers": [{"color": "#f5f5f5"}]
+            "stylers": [{ "color": "#f5f5f5" }]
         },
         {
             "featureType": "water",
             "elementType": "geometry",
-            "stylers": [{"color": "#d0d0d0"}]
+            "stylers": [{ "color": "#d0d0d0" }]
         },
         {
             "featureType": "water",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#555"}]
+            "stylers": [{ "color": "#555" }]
         }
     ];
-    
+
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         center: mapCenter,
@@ -805,19 +805,19 @@ window.initMap = function() {
         streetViewControl: true,
         fullscreenControl: true
     });
-    
+
     const geocoder = new google.maps.Geocoder();
     const infoWindow = new google.maps.InfoWindow();
     const markers = [];
-    
+
     const allProjects = [...projectsData.social, ...projectsData.residential];
     const uniqueAddresses = new Map();
-    
+
     allProjects.forEach(project => {
         const address = `${project.street}, ${project.city}, ${project.country}`;
         let projectSection = '';
         let projectIndex = -1;
-        
+
         const socialIndex = projectsData.social.findIndex(p => p.name === project.name);
         if (socialIndex !== -1) {
             projectSection = 'social';
@@ -829,7 +829,7 @@ window.initMap = function() {
                 projectIndex = residentialIndex;
             }
         }
-        
+
         if (!uniqueAddresses.has(address)) {
             uniqueAddresses.set(address, []);
         }
@@ -839,10 +839,11 @@ window.initMap = function() {
             index: projectIndex
         });
     });
-    
+
     let markersCreated = 0;
     const totalAddresses = uniqueAddresses.size;
     
+
     uniqueAddresses.forEach((projects, address) => {
         geocoder.geocode({ address: address }, (results, status) => {
             if (status === 'OK') {
@@ -850,11 +851,19 @@ window.initMap = function() {
                     map: map,
                     position: results[0].geometry.location,
                     title: projects.map(p => p.name).join(', '),
-                    animation: google.maps.Animation.DROP
+                    animation: google.maps.Animation.DROP,
+                    icon: {
+                        path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+                        fillColor: "#ededed",
+                        strokeColor: "#222",
+                        fillOpacity: 2,
+                        strokeWeight: 3,
+                        scale: 8,
+                    },
                 });
-                
+
                 markers.push(marker);
-                
+
                 if (projects.length === 1) {
                     marker.addListener('click', () => {
                         const project = projects[0];
@@ -869,7 +878,7 @@ window.initMap = function() {
                                 </strong>
                             </div>
                     `;
-                    
+
                     projects.forEach(project => {
                         infoContent += `
                             <div class="map-project-item" data-section="${project.section}" data-index="${project.index}" style="margin-bottom: 8px; padding: 8px; border-bottom: 1px solid #eee; cursor: pointer; transition: background 0.2s;">
@@ -885,7 +894,7 @@ window.initMap = function() {
                             </div>
                         `;
                     });
-                    
+
                     infoContent += `
                             <style>
                                 .map-project-item:hover {
@@ -895,11 +904,11 @@ window.initMap = function() {
                             </style>
                         </div>
                     `;
-                    
+
                     marker.addListener('click', () => {
                         infoWindow.setContent(infoContent);
                         infoWindow.open(map, marker);
-                        
+
                         google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
                             const projectItems = document.querySelectorAll('.map-project-item');
                             projectItems.forEach(item => {
@@ -913,9 +922,9 @@ window.initMap = function() {
                         });
                     });
                 }
-                
+
                 markersCreated++;
-                
+
                 if (markersCreated === totalAddresses) {
                     new markerClusterer.MarkerClusterer({
                         map,
@@ -930,7 +939,7 @@ window.initMap = function() {
                                         <text x="25" y="30" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">${count}</text>
                                     </svg>
                                 `;
-                                
+
                                 return new google.maps.Marker({
                                     position,
                                     icon: {
@@ -946,7 +955,7 @@ window.initMap = function() {
                             },
                         },
                     });
-                    
+
                     const bounds = new google.maps.LatLngBounds();
                     markers.forEach(marker => {
                         bounds.extend(marker.getPosition());
